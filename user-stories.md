@@ -8,4 +8,4 @@
 
 4. Power Point: As a shelter manager I need a way to know more about the application in order to see how viable the app is to our shelter and our mission statement.
 
-5. Logo: As a busy person I want a way to remember and identify the cause/organization in order to revisit later and discuss with others. 
+5. Logo: As a busy person I want a way to remember and identify the cause/organization in order to revisit later and discuss with others.
