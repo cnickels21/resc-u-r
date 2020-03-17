@@ -1,0 +1,34 @@
+/*------------------
+fonts:
+
+colors:
+
+--------------------*/
+
+/*----------------------
+      Global Style
+----------------------*/
+*  {
+  box-sizing: border-box;
+}
+body > header, main, footer {
+  margin: 30px auto;
+  width: 1200px;
+}
+
+/*--------------------
+      Nav Bar
+----------------------*/
+.sidenav {
+  width: 160px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+
+/*----------------------
+    Header & Footer
+-----------------------*/
+header {
+  height: 60px;
+}
