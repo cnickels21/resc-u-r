@@ -11,24 +11,65 @@ colors:
 *  {
   box-sizing: border-box;
 }
+html {
+  background: linear-gradient(to bottom right, rgb(13, 132, 136), rgba(166, 199, 241, 0.849));
+  color: #fff;
+
+}
+
 body > header, main, footer {
-  margin: 30px auto;
+  margin: 0px auto;
   width: 1200px;
+  text-align: center;
+  
+}
+
+h1 {
+  font-size: 6rem;
+  text-align: center;
+  
+}
+
+h3 {
+  font-size: 2rem;
+  text-align: center;
 }
 
 /*--------------------
       Nav Bar
 ----------------------*/
 .sidenav {
-  width: 160px;
+  width: 200px;
   position: fixed;
   top: 0;
   left: 0;
   height: 100%;
-
+}
 /*----------------------
     Header & Footer
 -----------------------*/
 header {
-  height: 60px;
+  background: linear-gradient(to bottom right, rgb(153, 153, 160), rgb(187, 187, 190), rgb(153, 153, 160));
+}
+
+/*---------------------
+        Form
+----------------------*/
+#petForm {
+  background: linear-gradient(to bottom right, rgb(153, 153, 160), rgb(187, 187, 190), rgb(153, 153, 160));
+
+}
+
+/*---------------------
+      Pet Cards
+----------------------*/
+article {
+  float:left;
+  width: 30%;
+  height: 700px;
+  border: double 6px white;
+  border-radius: 10px;
+  background: linear-gradient(to bottom right, rgb(153, 153, 160), rgb(187, 187, 190), rgb(153, 153, 160));
+  margin: 10px;
+  padding: 6px;
 }
