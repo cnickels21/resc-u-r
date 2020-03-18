@@ -10,12 +10,11 @@ function handleFormSubmission(event) {
     var petValue4 = document.getElementById('petInput4').checked;  //get the value of an element by it's id
     userData.push(petValue4);
 
-    console.log(allPets);
+
     // localStorage.setItem('userData', JSON.stringify(userData));
 
-    for (var i = 0; i = allPets.length; i++) {
-        if (userData[0] == allPets[i].energy && userData[2] == allPets[i].social && userData[4] == allPets[i].clean) {
-            console.log('hi');
+    for (var i = 0; i < allPets.length; i++) {
+        if (userData[0] === allPets[i].energy && userData[2] === allPets[i].social && userData[4] === allPets[i].clean) {
             renderMatch();
         }
     }

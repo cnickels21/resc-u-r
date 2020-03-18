@@ -19,6 +19,7 @@ function Pets(name, imageName, age, weight, energy, social, clean, isGoodWithDog
   allPets.push(this);
 }
 
+
 // creating new pets here
 new Pets('Norabelle', 'doofus', '3 years', '14 lbs', true, true, true, true, true, true, true, 'Nora is a curious cat, as long as you have kitty snacks.  She is goofy and playful, but also humble and likes her long naps in the sun.');
 
