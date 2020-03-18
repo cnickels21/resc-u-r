@@ -54,19 +54,35 @@ function handleFormSubmission(event) {
         description.appendChild(heavy);
         // good with dogs or not
         var doggos = document.createElement('li');
-        doggos.textContent = `Is good with dogs: ${allPets[i].isGoodWithDogs}`;
+        if (this.isGoodWithDogs === true) {
+            doggos.textContent = `Enjoys being around dogs`;
+        } else if (this.isGoodWithDogs === false) {
+            doggos.textContent = `Does not like dogs`;
+        }
         description.appendChild(doggos);
         // good with cats or not
         var kitties = document.createElement('li');
-        kitties.textContent = `Is good with cats: ${allPets[i].isGoodWithCats}`;
+        if (this.isGoodWithCats === true) {
+            kitties.textContent = `Enjoys being around cats`;
+        } else if (this.isGoodWithCats === false) {
+            kitties.textContent = `Does not like cats`;
+        }
         description.appendChild(kitties);
         // good with kids or not
         var kids = document.createElement('li');
-        kids.textContent = `Is good with kids: ${allPets[i].isGoodWithKids}`;
+        if (this.isGoodWithKids === true) {
+            kids.textContent = `Enjoys being around kids`;
+        } else if (this.isGoodWithKids === false) {
+            kids.textContent = `Does not like kids`;
+        }
         description.appendChild(kids);
         // good with mailmen or not
         var postal = document.createElement('li');
-        postal.textContent = `Is good with postal carriers: ${allPets[i].isGoodWithMail}`;
+        if (this.isGoodWithMail === true) {
+            postal.textContent = `Won't attack postal carriers`;
+        } else if (this.isGoodWithMail === false) {
+            postal.textContent = `Postal carriers beware!`;
+        }
         description.appendChild(postal);
         // personality paragraph
         var personaParagraph = document.createElement('p');
