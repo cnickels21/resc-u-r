@@ -1,9 +1,9 @@
 'use strict';
-
+ 
 function handleFormSubmission(event) {
   event.preventDefault();
-
-
+ 
+ 
   var userData = [];
   var petValue0 = document.getElementById('petInput0').checked;  //get the value of an element by it's id
   userData.push(petValue0);
@@ -11,11 +11,11 @@ function handleFormSubmission(event) {
   userData.push(petValue1);
   var petValue2 = document.getElementById('petInput4').checked;  //get the value of an element by it's id
   userData.push(petValue2);
-
-
-
+ 
+ 
+ 
   // localStorage.setItem('userData', JSON.stringify(userData));
-
+ 
   for (var i = 0; i < allPets.length; i++) {
     if (userData[0] === allPets[i].energy) {
       if (userData[1] === allPets[i].social) {
@@ -25,7 +25,7 @@ function handleFormSubmission(event) {
       }
     }
   }
-
+ 
   // render user pet matches in place of form
   function renderMatch() {
     // individual pet profiles
@@ -91,26 +91,26 @@ function handleFormSubmission(event) {
   }
   document.getElementById('petForm').reset();
 }
-
+ 
 var formElement = document.getElementById('petForm');
 formElement.addEventListener('submit', handleFormSubmission);
-
+ 
 //Slide show
-
+ 
 (function () {
-
+ 
   const imgArray = [];
   for (var i = 0; i < allPets.length; i++) {
     imgArray.push('../images/' + allPets[i].imageName + '.jpg');
     console.log(imgArray);
   }
-
-
+ 
+ 
   var index = 0;  // This will keep track of the current array index to use
   var img = document.getElementById('img'); // Get your reference just once, not on each function call
   console.log(imgArray);
-
-
+ 
+ 
   function autoChange() {
     // You only need to ensure that the index isn't out of bounds
     if (index < imgArray.length) {
@@ -125,6 +125,6 @@ formElement.addEventListener('submit', handleFormSubmission);
     setTimeout(autoChange, 3000);
   }
   autoChange();
-
+ 
 })();
-
+ 
