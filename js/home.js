@@ -97,7 +97,6 @@ formElement.addEventListener('submit', handleFormSubmission);
 
 //Slide show
 
-
 (function () {
 
   const imgArray = [];
