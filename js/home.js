@@ -96,7 +96,9 @@ var formElement = document.getElementById('petForm');
 formElement.addEventListener('submit', handleFormSubmission);
  
 //Slide show
- 
+// https://stackoverflow.com/questions/50788951/loop-through-image-array-with-pure-javascript
+
+
 (function () {
  
   const imgArray = [];
