@@ -127,6 +127,7 @@ button {
   padding: 15px 30px;
   text-align: center;
 }
+
 /*----------------------
     Header & Footer
 -----------------------*/
@@ -161,9 +162,9 @@ footer span {
   background: linear-gradient(to bottom right, rgb(153, 153, 160), rgb(187, 187, 190), rgb(153, 153, 160));
   width: 600px;
   padding: 30px;
+  margin: 30px auto;
   border: double 6px white;
   border-radius: 30px;
-  margin: 30px auto;
 }
 
 #petForm {
@@ -186,7 +187,7 @@ article {
   border: double 6px white;
   border-radius: 30px;
   background: linear-gradient(to bottom right, rgb(153, 153, 160), rgb(187, 187, 190), rgb(153, 153, 160));
-  margin: 15px 0 15px 30px;
+  margin: 15px;
   padding: 15px;
 }
 
@@ -258,8 +259,30 @@ article p {
 }
 
 /*------------------
+      Slideshow
+-------------------*/
+#slideshow {
+  background: linear-gradient(to bottom right, rgb(153, 153, 160), rgb(187, 187, 190), rgb(153, 153, 160));
+  padding: 15px;
+  border: double 6px white;
+  border-radius: 30px;
+  display: inline-block;
+  margin: 15px;
+}
+#slideshow img {
+  border-radius: 50px;
+}
+
+.mission {
+  display: inline-block;
+  vertical-align: top;
+  text-align: left;
+  margin: 15px;
+}
+
+/*------------------
     Special Case
 -------------------*/
-/* .hide {
+.hide {
   display: none;
-} */
+} 
