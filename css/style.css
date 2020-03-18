@@ -222,6 +222,11 @@ article p {
 
 #shelter-main h3 {
   padding-bottom: 30px;
+  text-shadow:
+		-1px -1px 0 #fff,
+		1px -1px 0 #fff,
+		-1px 1px 0 #fff,
+		1px 1px 0 #fff 
 }
 
 #shelter-main section p {
