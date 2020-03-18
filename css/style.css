@@ -1,8 +1,6 @@
 /*------------------
 fonts:
-font-family: 'Bowlby One SC', cursive;
 font-family: 'Permanent Marker', cursive;
-font-family: 'Bowlby One', cursive;
 font-family: 'Roboto', sans-serif;
 
 colors:
@@ -11,8 +9,6 @@ blue - rgb(59, 153, 156)
 light blue - rgb(166, 199, 241)
 white - #fff
 black - #000
-
-
 --------------------*/
 
 /*----------------------
@@ -160,13 +156,6 @@ footer span {
 /*---------------------
         Form
 ----------------------*/
-#petForm {
- font-size: 1.5rem; 
- line-height: 2.5rem;
- color: #000;
-
-}
-
 #form-div {
   background: linear-gradient(to bottom right, rgb(153, 153, 160), rgb(187, 187, 190), rgb(153, 153, 160));
   width: 600px;
@@ -174,6 +163,16 @@ footer span {
   border: double 6px white;
   border-radius: 30px;
   margin: 30px auto;
+}
+
+#petForm {
+  font-size: 1.5rem; 
+  line-height: 2.5rem;
+  color: #000;
+}
+
+#petForm p {
+  width: 550px;
 }
 
 /*---------------------
