@@ -5,22 +5,22 @@ function handleFormSubmission(event) {
     var userData = [];
     var petValue0 = document.getElementById('petInput0').checked;  //get the value of an element by it's id
     userData.push(petValue0);
-    var petValue2 = document.getElementById('petInput2').checked;  //get the value of an element by it's id
+    var petValue1 = document.getElementById('petInput2').checked;  //get the value of an element by it's id
+    userData.push(petValue1);
+    var petValue2 = document.getElementById('petInput4').checked;  //get the value of an element by it's id
     userData.push(petValue2);
-    var petValue4 = document.getElementById('petInput4').checked;  //get the value of an element by it's id
-    userData.push(petValue4);
+
+    
 
 
     // localStorage.setItem('userData', JSON.stringify(userData));
 
     for (var i = 0; i < allPets.length; i++) {
         if (userData[0] === allPets[i].energy) {
-            
             if (userData[1] === allPets[i].social) {
                 if (userData[2] === allPets[i].clean) {
-                    console.log(allPets[i]);
-                    renderMatch(allPets[i]);
-                    
+                  renderMatch(allPets[i]);
+
                 }
             }
         }
@@ -77,3 +77,4 @@ function handleFormSubmission(event) {
 
 var formElement = document.getElementById('petForm');
 formElement.addEventListener('submit', handleFormSubmission);
+
