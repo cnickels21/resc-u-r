@@ -14,8 +14,15 @@ function handleFormSubmission(event) {
     // localStorage.setItem('userData', JSON.stringify(userData));
 
     for (var i = 0; i < allPets.length; i++) {
-        if (userData[0] === allPets[i].energy && userData[2] === allPets[i].social && userData[4] === allPets[i].clean) {
-            renderMatch();
+        if (userData[0] === allPets[i].energy) {
+            
+            if (userData[1] === allPets[i].social) {
+                if (userData[2] === allPets[i].clean) {
+                    console.log(allPets[i]);
+                    renderMatch(allPets[i]);
+                    
+                }
+            }
         }
     }
 
@@ -27,43 +34,43 @@ function handleFormSubmission(event) {
         parentElement.appendChild(article);
         // name rendered as card title
         var title = document.createElement('h2');
-        title.textContent = this.name;
+        title.textContent = allPets[i].name;
         article.appendChild(title);
         // image set into card
         var img = document.createElement('img');
-        img.setAttribute('src', 'images/' + this.imageName + '.jpg');
-        img.setAttribute('alt', 'Adopt ' + this.name + 'NOW!');
+        img.setAttribute('src', 'images/' + allPets[i].imageName + '.jpg');
+        img.setAttribute('alt', 'Adopt ' + allPets[i].name + 'NOW!');
         article.appendChild(img);
         // unordered list for pet description
         var description = document.createElement('ul');
         article.appendChild(description);
         // age rendered
         var old = document.createElement('li');
-        old.textContent = this.age;
+        old.textContent = allPets[i].age;
         description.appendChild(old);
         // weight rendered
         var heavy = document.createElement('li')
-        heavy.textContent = this.weight;
+        heavy.textContent = allPets[i].weight;
         description.appendChild(heavy);
         // good with dogs or not
         var doggos = document.createElement('li');
-        doggos.textContent = `Is good with dogs: ${this.isGoodWithDogs}`;
+        doggos.textContent = `Is good with dogs: ${allPets[i].isGoodWithDogs}`;
         description.appendChild(doggos);
         // good with cats or not
         var kitties = document.createElement('li');
-        kitties.textContent = `Is good with cats: ${this.isGoodWithCats}`;
+        kitties.textContent = `Is good with cats: ${allPets[i].isGoodWithCats}`;
         description.appendChild(kitties);
         // good with kids or not
         var kids = document.createElement('li');
-        kids.textContent = `Is good with kids: ${this.isGoodWithKids}`;
+        kids.textContent = `Is good with kids: ${allPets[i].isGoodWithKids}`;
         description.appendChild(kids);
         // good with mailmen or not
         var postal = document.createElement('li');
-        postal.textContent = `Is good with postal carriers: ${this.isGoodWithMail}`;
+        postal.textContent = `Is good with postal carriers: ${allPets[i].isGoodWithMail}`;
         description.appendChild(postal);
         // personality paragraph
         var personaParagraph = document.createElement('p');
-        personaParagraph.textContent = this.personality;
+        personaParagraph.textContent = allPets[i].personality;
         article.appendChild(personaParagraph);
     }
 }
