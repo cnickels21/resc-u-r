@@ -10,41 +10,16 @@ function handleFormSubmission(event) {
     var petValue2 = document.getElementById('petInput4').checked;  //get the value of an element by it's id
     userData.push(petValue2);
 
-    //checkboxes
-    var petValue3 = document.getElementById('dogs').checked;  //get the value of an element by it's id
-    userData.push(petValue3);
-    var petValue4 = document.getElementById('cats').checked;  //get the value of an element by it's id
-    userData.push(petValue4);
-    var petValue5 = document.getElementById('children').checked;  //get the value of an element by it's id
-    userData.push(petValue5);
-    var petValue6 = document.getElementById('postalCarriers').checked;  //get the value of an element by it's id
-    userData.push(petValue6);
+    
 
 
     // localStorage.setItem('userData', JSON.stringify(userData));
 
-    for (let j = 0; j < allPets.length; j++) {
-        if (userData[0] === allPets[j].energy) {
-            if (userData[1] === allPets[j].social) {
-                if (userData[2] === allPets[j].clean) {
-
-                    for (let i = 0; i < allPets.length; i++) {
-                        if (userData[3] === allPets[i].isGoodWithDogs) {
-                            if (userData[4] === allPets[i].isGoodWithCats) {
-                                if (userData[5] === allPets[i].isGoodWithKids) {
-                                    if (userData[6] === allPets[i].isGoodWithMail) {
-                                        console.log(allPets[i]);
-                                        renderMatch(allPets[i]);
-                                    }
-                                }
-                            }
-                        } else {
-                            renderMatch(allPets[i]);
-                        }
-                    }
-
-
-
+    for (var i = 0; i < allPets.length; i++) {
+        if (userData[0] === allPets[i].energy) {
+            if (userData[1] === allPets[i].social) {
+                if (userData[2] === allPets[i].clean) {
+                  renderMatch(allPets[i]);
 
                 }
             }
