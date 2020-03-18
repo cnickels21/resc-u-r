@@ -134,6 +134,7 @@ header {
   background: linear-gradient(to top right, rgb(255, 255, 255), rgb(255, 255, 255), rgb(255, 255, 255), rgba(190, 190, 190, 0.7), rgb(175, 175, 175)), url(../images/paw-prints.jpg) fixed;
   height: 200px;
   border: solid 1px white;
+  margin-top: -17px;
 }
 
 footer {
@@ -179,13 +180,13 @@ footer span {
       Pet Cards
 ----------------------*/
 article {
-  float:left;
+  float:right;
   width: 30%;
   height: 1000px;
   border: double 6px white;
   border-radius: 30px;
   background: linear-gradient(to bottom right, rgb(153, 153, 160), rgb(187, 187, 190), rgb(153, 153, 160));
-  margin: 15px;
+  margin: 15px 0 15px 30px;
   padding: 15px;
 }
 
