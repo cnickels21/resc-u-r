@@ -27,12 +27,31 @@ body > header, main, footer {
 h1 {
   font-size: 6rem;
   text-align: center;
+  color: #fff;
+  text-shadow:
+		-2px -2px 0 #f00,
+		2px -2px 0 #f00,
+		-2px 2px 0 #f00,
+		2px 2px 0 #f00 
   
+}
+
+h2 {
+  font-size: 3rem;
+  text-align: center;
+  color: #f00;
 }
 
 h3 {
   font-size: 2rem;
   text-align: center;
+  color: #f00;
+}
+
+p {
+  font-size: 1.5rem;
+  width: 600px;
+  margin: 0 auto;
 }
 
 /*--------------------
@@ -44,20 +63,29 @@ h3 {
   top: 0;
   left: 0;
   height: 100%;
+  background: linear-gradient(to bottom, rgb(255, 255, 255), rgb(255, 255, 255), rgb(255, 255, 255), rgb(187, 187, 190), rgb(153, 153, 160));
 }
 /*----------------------
     Header & Footer
 -----------------------*/
 header {
-  background: linear-gradient(to bottom right, rgb(153, 153, 160), rgb(187, 187, 190), rgb(153, 153, 160));
+  margin: 0;
+  background: linear-gradient(to right, rgb(255, 255, 255), rgb(255, 255, 255), rgb(255, 255, 255), rgb(187, 187, 190), rgb(153, 153, 160));
 }
 
 /*---------------------
         Form
 ----------------------*/
 #petForm {
-  background: linear-gradient(to bottom right, rgb(153, 153, 160), rgb(187, 187, 190), rgb(153, 153, 160));
+  
+}
 
+#form-div {
+  background: linear-gradient(to bottom right, rgb(153, 153, 160), rgb(187, 187, 190), rgb(153, 153, 160));
+  width: 600px;
+  padding: 30px;
+  border-radius: 30px;
+  margin: 30px auto;
 }
 
 /*---------------------
