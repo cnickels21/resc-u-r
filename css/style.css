@@ -1,8 +1,14 @@
 /*------------------
 fonts:
+font-family: 'Permanent Marker', cursive;
+font-family: 'Roboto', sans-serif;
 
 colors:
-
+red - #f00
+blue - rgb(59, 153, 156)
+light blue - rgb(166, 199, 241)
+white - #fff
+black - #000
 --------------------*/
 
 /*----------------------
@@ -11,9 +17,10 @@ colors:
 *  {
   box-sizing: border-box;
 }
-html {
-  background: linear-gradient(to bottom right, rgb(13, 132, 136), rgba(166, 199, 241, 0.849));
-  color: #fff;
+html { 
+  background: linear-gradient(to bottom right, rgba(59, 153, 156, 0.8), rgba(166, 199, 241, 0.6)), url(../images/paw-trail.jpg) top fixed;
+  color: #000;
+  font-family: 'Roboto', sans-serif;
 
 }
 
@@ -21,43 +28,151 @@ body > header, main, footer {
   margin: 0px auto;
   width: 1200px;
   text-align: center;
-  
+}
+
+main {
+  padding: 30px;
+  font-family: 'Roboto', sans-serif;
 }
 
 h1 {
-  font-size: 6rem;
+  font-size: 7rem;
+  font-family: 'Permanent Marker', cursive;
   text-align: center;
+  color: #fff;
+  text-shadow:
+		-3px -3px 0 #f00,
+		3px -3px 0 #f00,
+		-3px 3px 0 #f00,
+		3px 3px 0 #f00 
   
+}
+
+h2 {
+  font-size: 3rem;
+  font-family: 'Permanent Marker', cursive;
+  text-align: center;
+  color: #f00;
+  margin: 15px;
+  text-shadow:
+		-1px -1px 0 #fff,
+		1px -1px 0 #fff,
+		-1px 1px 0 #fff,
+		1px 1px 0 #fff 
 }
 
 h3 {
   font-size: 2rem;
+  font-family: 'Permanent Marker', cursive;
   text-align: center;
+  color: #f00;
+}
+
+p {
+  font-size: 1.5rem;
+  line-height: 2rem;
+  width: 600px;
+  margin: 0 auto;
+}
+
+main li {
+  font-size: 1.25rem;
+}
+
+button {
+  padding: 15px 30px;
+  margin-top: 15px;
+  font-size: 1.25rem;
+  /* font-family: 'Permanent Marker', cursive; */
+  color: #fff;
+  background-color: #f00;
+  border-radius: 30px;
 }
 
 /*--------------------
       Nav Bar
 ----------------------*/
 .sidenav {
-  width: 200px;
+  width: 202px;
   position: fixed;
   top: 0;
   left: 0;
   height: 100%;
+  color: #f00;
+  border: solid 1px white;
+  background: linear-gradient(to bottom, rgb(255, 255, 255), rgb(255, 255, 255), rgb(255, 255, 255), rgb(190, 190, 190), rgb(175, 175, 175)) right;
+  font-family: 'Permanent Marker', cursive;
+
+}
+
+.sidenav ul {
+  font-size: 1.5rem;
+  margin-top: 15px;
+  text-align: center;
+}
+
+.sidenav ul li {
+  margin: 30px 0;
+}
+
+.sidenav ul a {
+  text-decoration: none;
+  color: #f00;
+}
+
+.socialIcons a {
+  display: block;
+  color: #f00;
+  font-size: 1.75rem;
+  padding: 15px 30px;
+  text-align: center;
 }
 /*----------------------
     Header & Footer
 -----------------------*/
 header {
-  background: linear-gradient(to bottom right, rgb(153, 153, 160), rgb(187, 187, 190), rgb(153, 153, 160));
+  background: linear-gradient(to top right, rgb(255, 255, 255), rgb(255, 255, 255), rgb(255, 255, 255), rgba(190, 190, 190, 0.7), rgb(175, 175, 175)), url(../images/paw-prints.jpg) fixed;
+  height: 200px;
+  border: solid 1px white;
+}
+
+footer {
+  background-color: #fff;
+  padding: 15px;
+  margin: 30px;
+  text-align: center;
+  font-size: 1.5rem;
+  width: 100%;
+  clear: both;
+}
+
+footer span {
+  font-family: 'Permanent Marker', cursive;
+  color: #f00;
+  font-size: 1.5rem;
+
 }
 
 /*---------------------
         Form
 ----------------------*/
-#petForm {
+#form-div {
   background: linear-gradient(to bottom right, rgb(153, 153, 160), rgb(187, 187, 190), rgb(153, 153, 160));
+  width: 600px;
+  padding: 30px;
+  border: double 6px white;
+  border-radius: 30px;
+  margin: 30px auto;
+}
 
+#petForm {
+  font-size: 1.5rem; 
+  line-height: 2.5rem;
+  color: #000;
+}
+
+#petForm p {
+  width: 550px;
 }
 
 /*---------------------
@@ -66,10 +181,70 @@ header {
 article {
   float:left;
   width: 30%;
-  height: 700px;
+  height: 1000px;
   border: double 6px white;
-  border-radius: 10px;
+  border-radius: 30px;
   background: linear-gradient(to bottom right, rgb(153, 153, 160), rgb(187, 187, 190), rgb(153, 153, 160));
-  margin: 10px;
-  padding: 6px;
+  margin: 15px;
+  padding: 15px;
 }
+
+article ul {
+  font-size: 1.25rem;
+  width: 100%;
+  text-align: left; 
+  margin: 30px 0;
+}
+
+article ul li {
+  margin: 15px 0;
+}
+
+article p {
+  font-size: 1.25rem;
+  line-height: 2rem;
+  width: 100%;
+  text-align: left;
+}
+
+/*----------------------
+    Shelter Page
+----------------------*/
+#shelter-main section {
+  background: linear-gradient(to bottom right, rgb(153, 153, 160), rgb(187, 187, 190), rgb(153, 153, 160));
+  width: 600px;
+  padding: 30px;
+  border: double 6px white;
+  border-radius: 30px;
+  margin: 30px auto;
+}
+
+#shelter-main h3 {
+  padding-bottom: 30px;
+  text-shadow:
+		-1px -1px 0 #fff,
+		1px -1px 0 #fff,
+		-1px 1px 0 #fff,
+		1px 1px 0 #fff 
+}
+
+#shelter-main section p {
+  width: 550px;
+}
+
+#shelter-main a {
+  text-decoration: none;
+  background-color: #f00;
+  color: #fff;
+  font-size: 1.25rem;
+  border-radius: 30px;
+  padding: 15px;
+  line-height: 4rem;
+}
+
+/*------------------
+    Special Case
+-------------------*/
+/* .hide {
+  display: none;
+} */
