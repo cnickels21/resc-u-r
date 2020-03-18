@@ -65,3 +65,4 @@ for (var i = 0; i < allPets.length; i++) {
     }
     allPets[i].render();
 }
+
