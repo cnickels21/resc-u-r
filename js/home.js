@@ -1,9 +1,28 @@
 'use strict';
 
-for (var i = 0; i < allPets.length; i++) {
-    Pets.prototype.render = function () {
+function handleFormSubmission(event) {
+    event.preventDefault();
+    var userData = [];
+    var petValue0 = document.getElementById('petInput0').checked;  //get the value of an element by it's id
+    userData.push(petValue0);
+    var petValue2 = document.getElementById('petInput2').checked;  //get the value of an element by it's id
+    userData.push(petValue2);
+    var petValue4 = document.getElementById('petInput4').checked;  //get the value of an element by it's id
+    userData.push(petValue4);
+
+
+    // localStorage.setItem('userData', JSON.stringify(userData));
+
+    for (var i = 0; i < allPets.length; i++) {
+        if (userData[0] === allPets[i].energy && userData[2] === allPets[i].social && userData[4] === allPets[i].clean) {
+            renderMatch();
+        }
+    }
+
+    // render user pet matches in place of form
+    function renderMatch() {
         // individual pet profiles
-        var parentElement = document.getElementById('pet-profiles');
+        var parentElement = document.getElementById('match-profiles');
         var article = document.createElement('article');
         parentElement.appendChild(article);
         // name rendered as card title
@@ -47,9 +66,7 @@ for (var i = 0; i < allPets.length; i++) {
         personaParagraph.textContent = this.personality;
         article.appendChild(personaParagraph);
     }
-    allPets[i].render();
 }
 
-
-
-
+var formElement = document.getElementById('petForm');
+formElement.addEventListener('submit', handleFormSubmission);
