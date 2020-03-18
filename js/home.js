@@ -10,7 +10,7 @@ function handleFormSubmission(event) {
     var petValue2 = document.getElementById('petInput4').checked;  //get the value of an element by it's id
     userData.push(petValue2);
 
-    
+
 
 
     // localStorage.setItem('userData', JSON.stringify(userData));
@@ -19,7 +19,7 @@ function handleFormSubmission(event) {
         if (userData[0] === allPets[i].energy) {
             if (userData[1] === allPets[i].social) {
                 if (userData[2] === allPets[i].clean) {
-                  renderMatch(allPets[i]);
+                    renderMatch(allPets[i]);
 
                 }
             }
@@ -77,4 +77,33 @@ function handleFormSubmission(event) {
 
 var formElement = document.getElementById('petForm');
 formElement.addEventListener('submit', handleFormSubmission);
+
+// IIFE so slideshow autoplays
+
+
+function slideshow (){
+const imgArray = [];
+for (var i = 0; i < allPets[i].length; i++) {
+    imgArray.push(allPets[i].imageName);
+}
+
+let index = 0;  // This will keep track of the current array index to use
+let img = document.getElementById('img'); // Get your reference just once, not on each function call
+console.log (imgArray);
+function autoChange() {
+    // You only need to ensure that the index isn't out of bounds
+    if (index < imgArray.length) {
+        img.src = imgArray[index];      // If not, use the index
+        index++;                        // Then, increment it
+        console.clear();
+        console.log(imgArray[index]);
+    } else {
+        index = 0;  // If so, reset the index
+    }
+    // Now that the right image is showing, wait 3 seconds and call the function all over again
+    setTimeout(autoChange, 3000);
+}
+autoChange();
+}
+slideshow();
 
