@@ -209,6 +209,20 @@ article p {
 }
 
 /*----------------------
+        Chart
+-----------------------*/
+#pet-chart-div {
+  background: linear-gradient(to bottom right, rgb(153, 153, 160), rgb(187, 187, 190), rgb(153, 153, 160));
+  width: 600px;
+  height: 600px;
+  padding: 30px;
+  border: double 6px white;
+  border-radius: 30px;
+  clear: both;
+  margin: 0 auto;
+}
+
+/*----------------------
     Shelter Page
 ----------------------*/
 #shelter-main section {
