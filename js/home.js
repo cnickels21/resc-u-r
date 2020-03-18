@@ -2,6 +2,8 @@
 
 function handleFormSubmission(event) {
     event.preventDefault();
+    
+
     var userData = [];
     var petValue0 = document.getElementById('petInput0').checked;  //get the value of an element by it's id
     userData.push(petValue0);
@@ -10,7 +12,6 @@ function handleFormSubmission(event) {
     var petValue2 = document.getElementById('petInput4').checked;  //get the value of an element by it's id
     userData.push(petValue2);
 
-    
 
 
     // localStorage.setItem('userData', JSON.stringify(userData));
@@ -20,7 +21,6 @@ function handleFormSubmission(event) {
             if (userData[1] === allPets[i].social) {
                 if (userData[2] === allPets[i].clean) {
                   renderMatch(allPets[i]);
-
                 }
             }
         }
@@ -46,11 +46,11 @@ function handleFormSubmission(event) {
         article.appendChild(description);
         // age rendered
         var old = document.createElement('li');
-        old.textContent = allPets[i].age;
+        old.textContent = `Age: ${allPets[i].age}`;
         description.appendChild(old);
         // weight rendered
         var heavy = document.createElement('li')
-        heavy.textContent = allPets[i].weight;
+        heavy.textContent = `Weight: ${allPets[i].weight}`;
         description.appendChild(heavy);
         // good with dogs or not
         var doggos = document.createElement('li');
@@ -73,6 +73,8 @@ function handleFormSubmission(event) {
         personaParagraph.textContent = allPets[i].personality;
         article.appendChild(personaParagraph);
     }
+    document.getElementById('petForm').reset();
+    document.getElementById('petForm').reload();
 }
 
 var formElement = document.getElementById('petForm');

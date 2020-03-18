@@ -20,11 +20,11 @@ for (var i = 0; i < allPets.length; i++) {
         article.appendChild(description);
         // age rendered
         var old = document.createElement('li');
-        old.textContent = this.age;
+        old.textContent = `Age: ${this.age}`;
         description.appendChild(old);
         // weight rendered
         var heavy = document.createElement('li')
-        heavy.textContent = this.weight;
+        heavy.textContent = `Weight: ${this.weight}`;
         description.appendChild(heavy);
         // good with dogs or not
         var doggos = document.createElement('li');

@@ -46,4 +46,4 @@ new Pets('Samwise', 'snowy', '3 years', '60 lbs 8 oz', true, true, false, true, 
 new Pets('Biff and Buff', 'twins', '2 years', '5 lbs 2 oz and 6 lbs', true, true, true, true, true, true, false, 'Biff and Buff are inseparable siblings. So we insist they be adopted together! They are their own best friends, so worry not about having to give them too much attention. They’re young and curious, so they can be a bit troublesome, but they mean well.');
 
 //store the pet objects
-// localStorage.setItem('savedPets', JSON.stringify(allPets));
+localStorage.setItem('savedPets', JSON.stringify(allPets));
