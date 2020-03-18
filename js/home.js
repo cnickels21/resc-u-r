@@ -90,7 +90,6 @@ function handleFormSubmission(event) {
         article.appendChild(personaParagraph);
     }
     document.getElementById('petForm').reset();
-    document.getElementById('petForm').reload();
 }
 
 var formElement = document.getElementById('petForm');
