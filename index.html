@@ -6,6 +6,7 @@
   <title>Resc-U-r</title>
   <meta name="description" content="">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="css/reset.css">
   <link rel="stylesheet" href="css/style.css">
   <script src="https://kit.fontawesome.com/988c5e7e3e.js" crossorigin="anonymous"></script>
 
@@ -30,10 +31,10 @@
               Social Icons
           -->
           <div class="socialIcons">
-            <i class="fab fa-github-alt" style="color: #ff0000"></i>
-            <i class="fab fa-twitter" style="color: #ff0000"></i>
-            <i class="fab fa-facebook-f" style="color: #ff0000"></i>
-            <i class="fab fa-instagram" style="color: #ff0000"></i>
+            <a href=""><i class="fab fa-github-alt" style="color: #ff0000"></i></a>
+            <a href=""><i class="fab fa-twitter" style="color: #ff0000"></i></a>
+            <a href=""><i class="fab fa-facebook-f" style="color: #ff0000"></i></a>
+            <a href=""><i class="fab fa-instagram" style="color: #ff0000"></i></a>
           </div>
 
 
@@ -42,7 +43,7 @@
 
       <main>
         <div class="mission">
-          <h2> What We Do</h2>
+          <h2>Our Mission</h2>
           <p>Here at Resc-U-r we pride ourselves on matching people with their ideal companions. We match our
             pets to you by their distinct personality traits and the amount of energy they have. Simply fill
             out our short questionnaire to see which pets would be perfect for you to add to your family
@@ -52,64 +53,59 @@
           <form action="" id="petForm">
 
             <div class="contactInfo">
-              <label for="name">Enter your name: </label>
+              <label for="name">Your name: </label>
               <input type="text" name="name" id="name" required>
 
             </div>
 
             <div class="email">
-              <label for="name">Enter Your Email: </label>
+              <label for="name">Your Email: </label>
               <input type="text" name="name" id="name" required>
             </div>
 
-            <div>
-              <p>How would you describe your personality? </p>
+            <p class="formP">How would you describe your personality? </p>
 
-              <fieldset>
-                <input id="petInput0" type="radio" value="energetic" name="group2">
-                <label for="energetic">Energetic</label>
-                <input id="petInput1" type="radio" value="calm" name="group2">
-                <label for="calm">Calm</label>
-              </fieldset>
+            <fieldset>
+              <input id="petInput0" type="radio" value="energetic" name="group2">
+              <label for="energetic">Energetic</label>
+              <input id="petInput1" type="radio" value="calm" name="group2">
+              <label for="calm">Calm</label>
+            </fieldset>
 
-              <fieldset>
-                <input id="petInput2" type="radio" value="friendly" name="group3">
-                <label for="friendly">Friendly</label>
-                <input id="petInput3" type="radio" value="shy" name="group3">
-                <label for="shy">Shy</label>
-              </fieldset>
+            <fieldset>
+              <input id="petInput2" type="radio" value="friendly" name="group3">
+              <label for="friendly">Friendly</label>
+              <input id="petInput3" type="radio" value="shy" name="group3">
+              <label for="shy">Shy</label>
+            </fieldset>
 
 
-              <fieldset>
-                <input id="petInput4" type="radio" value="neat" name="group6">
-                <label for="neat">Neat </label>
-                <input id="petInput5" type="radio" value="disorderly" name="group6">
-                <label for="disorderly">Disorderly</label>
-              </fieldset>
-            </div>
+            <fieldset>
+              <input id="petInput4" type="radio" value="neat" name="group6">
+              <label for="neat">Neat </label>
+              <input id="petInput5" type="radio" value="disorderly" name="group6">
+              <label for="disorderly">Disorderly</label>
+            </fieldset>
 
-            <div>
-              <p>What would you like your pet to do well with?</p>
-              <fieldset>
+            <p class="formP">Do you have other important people in your life?</p>
+            <fieldset>
 
-                <input type="checkbox" value="dogs" name="group7">
-                <label for="dogs">Dogs</label>
+              <input type="checkbox" value="dogs" name="group7">
+              <label for="dogs">Dogs</label>
 
-                <input type="checkbox" value="cats" name="group7">
-                <label for="cats">Cats</label>
+              <input type="checkbox" value="cats" name="group7">
+              <label for="cats">Cats</label>
 
-                <input type="checkbox" value="children" name="group7">
-                <label for="children">Children</label>
+              <input type="checkbox" value="children" name="group7">
+              <label for="children">Children</label>
 
-                <input type="checkbox" value="postalCarriers" name="group7">
-                <label for="postalCarriers">Postal Carriers</label>
+              <input type="checkbox" value="postalCarriers" name="group7">
+              <label for="postalCarriers">Postal Carriers</label>
 
-              </fieldset>
-            </div>
+            </fieldset>
 
-            <div class="button">
-              <input type="submit" value="Get Your Results!">
-            </div>
+            <button type="submit" value="submit">Meet your Match!</button>
+
           </form>
         </div>
         <section id="match-profiles">
