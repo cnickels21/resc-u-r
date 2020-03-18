@@ -149,8 +149,9 @@ header {
 
 button {
   padding: 15px 30px;
-  margin: 30px;
-  font-size: 1rem;
+  margin-top: 30px;
+  font-size: 1.25rem;
+  /* font-family: 'Permanent Marker', cursive; */
   color: #fff;
   background-color: #f00;
 }
