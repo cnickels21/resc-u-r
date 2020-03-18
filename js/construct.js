@@ -21,7 +21,7 @@ function Pets(name, imageName, age, weight, energy, social, clean, isGoodWithDog
 
 
 // creating new pets here
-new Pets('Norabelle', 'doofus', '3 years', '14 lbs', true, true, true, true, true, true, true, 'Nora is a curious cat, as long as you have kitty snacks.  She is goofy and playful, but also humble and likes her long naps in the sun.');
+new Pets('Norabelle', 'doofus', '3 years', '14 lbs', true, false, true, true, true, true, true, 'Nora is a curious cat, as long as you have kitty snacks.  She is goofy and playful, but also humble and likes her long naps in the sun.');
 
 new Pets('Dexter', 'goofybutt', '4 1/2 years', '74 lbs 8 oz', true, true, true, true, true, true, false, 'Dexter is very proud and energetic.  He requires a lot of time for running throughout your typical week and is a leader through and through.');
 
@@ -41,7 +41,7 @@ new Pets('Skeletor', 'skeletor', '21 years', '8 lbs 4 oz', false, false, true, t
 
 new Pets('Rocket', 'sleepy', '7 years', '12 lbs 8 oz', false, true, false, true, false, true, false, 'Rocket is above it all. He’s friendly, but only as far as it serves his needs. He is a hermit king. He is laid back and probably won’t play much. But he may rub against your leg for a morsel of food.');
 
-new Pets('Samwise', 'snowy', '3 years', '60 lbs 8 oz', true, true, false, true, true, true, true, 'Samwise is the perfect dog--fun, loyal, and good-natured. He will never poop on the rug. And he will always play with the children. And the cats. He looooooves cats. And frisbees!');
+new Pets('Samwise', 'snowy', '3 years', '60 lbs 8 oz', true, false, false, true, true, true, true, 'Samwise is the perfect dog--fun, loyal, and good-natured. He will never poop on the rug. And he will always play with the children. And the cats. He looooooves cats. And frisbees!');
 
 new Pets('Biff and Buff', 'twins', '2 years', '5 lbs 2 oz and 6 lbs', true, true, true, true, true, true, false, 'Biff and Buff are inseparable siblings. So we insist they be adopted together! They are their own best friends, so worry not about having to give them too much attention. They’re young and curious, so they can be a bit troublesome, but they mean well.');
 
