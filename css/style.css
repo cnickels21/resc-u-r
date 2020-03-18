@@ -21,8 +21,8 @@ black - #000
 *  {
   box-sizing: border-box;
 }
-html {
-  background: linear-gradient(to bottom right, rgba(59, 153, 156, 0.8), rgba(166, 199, 241, 0.6));
+html { 
+  background: linear-gradient(to bottom right, rgba(59, 153, 156, 0.8), rgba(166, 199, 241, 0.6)), url(../images/paw-trail.jpg) top fixed;
   color: #000;
   font-family: 'Roboto', sans-serif;
 
@@ -32,7 +32,6 @@ body > header, main, footer {
   margin: 0px auto;
   width: 1200px;
   text-align: center;
-  
 }
 
 main {
@@ -79,6 +78,10 @@ p {
   margin: 0 auto;
 }
 
+main li {
+  font-size: 1.25rem;
+}
+
 /*--------------------
       Nav Bar
 ----------------------*/
@@ -88,15 +91,16 @@ p {
   top: 0;
   left: 0;
   height: 100%;
+  color: #f00;
   border: solid 1px white;
-  background: linear-gradient(to bottom, rgb(255, 255, 255), rgb(255, 255, 255), rgb(255, 255, 255), rgb(190, 190, 190), rgb(175, 175, 175));
+  background: linear-gradient(to bottom, rgb(255, 255, 255), rgb(255, 255, 255), rgb(255, 255, 255), rgb(190, 190, 190), rgb(175, 175, 175)) right;
   font-family: 'Permanent Marker', cursive;
 
 }
 
 .sidenav ul {
   font-size: 1.5rem;
-  margin-top: 45px;
+  margin-top: 15px;
   text-align: center;
 }
 
@@ -111,7 +115,8 @@ p {
 
 .socialIcons a {
   display: block;
-  font-size: 2rem;
+  color: #f00;
+  font-size: 1.75rem;
   padding: 15px 30px;
   text-align: center;
 }
@@ -119,9 +124,26 @@ p {
     Header & Footer
 -----------------------*/
 header {
-  background: linear-gradient(to top right, rgb(255, 255, 255), rgb(255, 255, 255), rgb(255, 255, 255), rgba(190, 190, 190, 0.7), rgb(175, 175, 175));
+  background: linear-gradient(to top right, rgb(255, 255, 255), rgb(255, 255, 255), rgb(255, 255, 255), rgba(190, 190, 190, 0.7), rgb(175, 175, 175)), url(../images/paw-prints.jpg) fixed;
   height: 200px;
   border: solid 1px white;
+}
+
+footer {
+  background-color: #fff;
+  padding: 15px;
+  margin: 30px;
+  text-align: center;
+  font-size: 1.5rem;
+  width: 100%;
+  clear: both;
+}
+
+footer span {
+  font-family: 'Permanent Marker', cursive;
+  color: #f00;
+  font-size: 1.5rem;
+
 }
 
 /*---------------------
@@ -134,10 +156,6 @@ header {
 
 }
 
-/* .formP {
-  text-align: justify;
-} */
-
 #form-div {
   background: linear-gradient(to bottom right, rgb(153, 153, 160), rgb(187, 187, 190), rgb(153, 153, 160));
   width: 600px;
@@ -149,7 +167,7 @@ header {
 
 button {
   padding: 15px 30px;
-  margin-top: 30px;
+  margin-top: 15px;
   font-size: 1.25rem;
   /* font-family: 'Permanent Marker', cursive; */
   color: #fff;
@@ -166,8 +184,8 @@ article {
   border: double 6px white;
   border-radius: 30px;
   background: linear-gradient(to bottom right, rgb(153, 153, 160), rgb(187, 187, 190), rgb(153, 153, 160));
-  margin: 10px;
-  padding: 5px;
+  margin: 15px;
+  padding: 15px;
 }
 
 article ul {
@@ -186,4 +204,24 @@ article p {
   line-height: 2rem;
   width: 100%;
   text-align: left;
+}
+
+/*----------------------
+    Shelter Page
+----------------------*/
+#shelter-main section {
+  background: linear-gradient(to bottom right, rgb(153, 153, 160), rgb(187, 187, 190), rgb(153, 153, 160));
+  width: 600px;
+  padding: 30px;
+  border: double 6px white;
+  border-radius: 30px;
+  margin: 30px auto;
+}
+
+#shelter-main h3 {
+  padding-bottom: 30px;
+}
+
+#shelter-main section p {
+  width: 550px;
 }
