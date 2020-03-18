@@ -54,33 +54,33 @@ function handleFormSubmission(event) {
         description.appendChild(heavy);
         // good with dogs or not
         var doggos = document.createElement('li');
-        if (this.isGoodWithDogs === true) {
+        if (allPets[i].isGoodWithDogs === true) {
             doggos.textContent = `Enjoys being around dogs`;
-        } else if (this.isGoodWithDogs === false) {
+        } else if (allPets[i].isGoodWithDogs === false) {
             doggos.textContent = `Does not like dogs`;
         }
         description.appendChild(doggos);
         // good with cats or not
         var kitties = document.createElement('li');
-        if (this.isGoodWithCats === true) {
+        if (allPets[i].isGoodWithCats === true) {
             kitties.textContent = `Enjoys being around cats`;
-        } else if (this.isGoodWithCats === false) {
+        } else if (allPets[i].isGoodWithCats === false) {
             kitties.textContent = `Does not like cats`;
         }
         description.appendChild(kitties);
         // good with kids or not
         var kids = document.createElement('li');
-        if (this.isGoodWithKids === true) {
+        if (allPets[i].isGoodWithKids === true) {
             kids.textContent = `Enjoys being around kids`;
-        } else if (this.isGoodWithKids === false) {
+        } else if (allPets[i].isGoodWithKids === false) {
             kids.textContent = `Does not like kids`;
         }
         description.appendChild(kids);
         // good with mailmen or not
         var postal = document.createElement('li');
-        if (this.isGoodWithMail === true) {
+        if (allPets[i].isGoodWithMail === true) {
             postal.textContent = `Won't attack postal carriers`;
-        } else if (this.isGoodWithMail === false) {
+        } else if (allPets[i].isGoodWithMail === false) {
             postal.textContent = `Postal carriers beware!`;
         }
         description.appendChild(postal);
@@ -97,7 +97,6 @@ formElement.addEventListener('submit', handleFormSubmission);
 
 //Slide show
 
-
 (function () {
 
     const imgArray = [];
@@ -108,7 +107,7 @@ formElement.addEventListener('submit', handleFormSubmission);
 
 
     var index = 0;  // This will keep track of the current array index to use
-   var img = document.getElementById('img'); // Get your reference just once, not on each function call
+    var img = document.getElementById('img'); // Get your reference just once, not on each function call
     console.log(imgArray);
 
 
@@ -128,4 +127,5 @@ formElement.addEventListener('submit', handleFormSubmission);
     autoChange();
 
 })();
+
 
