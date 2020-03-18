@@ -1,7 +1,17 @@
 /*------------------
 fonts:
+font-family: 'Bowlby One SC', cursive;
+font-family: 'Permanent Marker', cursive;
+font-family: 'Bowlby One', cursive;
+font-family: 'Roboto', sans-serif;
 
 colors:
+red - #f00
+blue - rgb(59, 153, 156)
+light blue - rgb(166, 199, 241)
+white - #fff
+black - #000
+
 
 --------------------*/
 
@@ -12,24 +22,27 @@ colors:
   box-sizing: border-box;
 }
 html {
-  background: linear-gradient(to bottom right, rgb(13, 132, 136), rgba(166, 199, 241, 0.849));
-  color: #fff;
+  background: linear-gradient(to bottom right, rgba(59, 153, 156, 0.8), rgba(166, 199, 241, 0.6));
+  color: #000;
+  font-family: 'Roboto', sans-serif;
 
 }
 
 body > header, main, footer {
   margin: 0px auto;
-  width: 1000px;
+  width: 1200px;
   text-align: center;
   
 }
 
 main {
   padding: 30px;
+  font-family: 'Roboto', sans-serif;
 }
 
 h1 {
-  font-size: 6rem;
+  font-size: 7rem;
+  font-family: 'Permanent Marker', cursive;
   text-align: center;
   color: #fff;
   text-shadow:
@@ -42,13 +55,20 @@ h1 {
 
 h2 {
   font-size: 3rem;
+  font-family: 'Permanent Marker', cursive;
   text-align: center;
   color: #f00;
   margin: 15px;
+  text-shadow:
+		-1px -1px 0 #fff,
+		1px -1px 0 #fff,
+		-1px 1px 0 #fff,
+		1px 1px 0 #fff 
 }
 
 h3 {
   font-size: 2rem;
+  font-family: 'Permanent Marker', cursive;
   text-align: center;
   color: #f00;
 }
@@ -69,14 +89,19 @@ p {
   left: 0;
   height: 100%;
   border: solid 1px white;
-  background: linear-gradient(to bottom, rgb(255, 255, 255), rgb(255, 255, 255), rgb(255, 255, 255), rgb(187, 187, 190), rgb(153, 153, 160));
+  background: linear-gradient(to bottom, rgb(255, 255, 255), rgb(255, 255, 255), rgb(255, 255, 255), rgb(190, 190, 190), rgb(175, 175, 175));
+  font-family: 'Permanent Marker', cursive;
+
 }
 
 .sidenav ul {
   font-size: 1.5rem;
-  padding: 30px;
-  line-height: 2.5rem;
+  margin-top: 45px;
   text-align: center;
+}
+
+.sidenav ul li {
+  margin: 30px 0;
 }
 
 .sidenav ul a {
@@ -94,7 +119,7 @@ p {
     Header & Footer
 -----------------------*/
 header {
-  background: linear-gradient(to right, rgb(255, 255, 255), rgb(255, 255, 255), rgb(255, 255, 255), rgb(187, 187, 190), rgb(153, 153, 160));
+  background: linear-gradient(to top right, rgb(255, 255, 255), rgb(255, 255, 255), rgb(255, 255, 255), rgba(190, 190, 190, 0.7), rgb(175, 175, 175));
   height: 200px;
   border: solid 1px white;
 }
@@ -136,10 +161,28 @@ button {
 article {
   float:left;
   width: 30%;
-  height: 700px;
+  height: 1000px;
   border: double 6px white;
-  border-radius: 15px;
+  border-radius: 30px;
   background: linear-gradient(to bottom right, rgb(153, 153, 160), rgb(187, 187, 190), rgb(153, 153, 160));
   margin: 10px;
-  padding: 6px;
+  padding: 5px;
+}
+
+article ul {
+  font-size: 1.25rem;
+  width: 100%;
+  text-align: left; 
+  margin: 30px 0;
+}
+
+article ul li {
+  margin: 15px 0;
+}
+
+article p {
+  font-size: 1.25rem;
+  line-height: 2rem;
+  width: 100%;
+  text-align: left;
 }
