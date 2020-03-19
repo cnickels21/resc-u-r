@@ -78,16 +78,32 @@ p {
 main li {
   font-size: 1.25rem;
 }
-
 button {
   padding: 15px 30px;
   margin-top: 15px;
   font-size: 1.25rem;
-  /* font-family: 'Permanent Marker', cursive; */
+  color: #fff;
+  background: rgb(100, 100, 100);
+  border-radius: 6px
+  transition-property: background, border-radius;
+  transition-duration: 1s;
+  transition-timing-function: linear;
+   /* font-family: 'Permanent Marker', cursive; */
+}
+button:hover {
+  background: #f00;
+  border-radius: 30px;
+}
+
+/* button {
+  padding: 15px 30px;
+  margin-top: 15px;
+  font-size: 1.25rem;
+ 
   color: #fff;
   background-color: #f00;
   border-radius: 30px;
-}
+} */
 
 /*--------------------
       Nav Bar
@@ -128,6 +144,13 @@ button {
   text-align: center;
 }
 
+.grow:hover
+{
+        -webkit-transform: scale(1.5);
+        -ms-transform: scale(1.5);
+        transform: scale(1.5);
+}
+
 /*----------------------
     Header & Footer
 -----------------------*/
@@ -135,7 +158,6 @@ header {
   background: linear-gradient(to top right, rgb(255, 255, 255), rgb(255, 255, 255), rgb(255, 255, 255), rgba(190, 190, 190, 0.7), rgb(175, 175, 175)), url(../images/paw-prints.jpg) fixed;
   height: 200px;
   border: solid 1px white;
-  margin-top: -17px;
 }
 
 footer {
@@ -209,6 +231,10 @@ article p {
   text-align: left;
 }
 
+article img {
+  border-radius: 30px;
+}
+
 /*----------------------
         Chart
 -----------------------*/
@@ -256,6 +282,10 @@ article p {
   border-radius: 30px;
   padding: 15px;
   line-height: 4rem;
+}
+
+#shelter-main img {
+  border: double 6px white;
 }
 
 /*------------------
