@@ -1,5 +1,6 @@
 'use strict';
 
+// team cards rendered to about us page
 for (var i = 0; i < allPets.length; i++) {
     if (allPets[i].name === 'Matt Barnhart') {
         renderTeam();

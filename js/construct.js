@@ -43,7 +43,7 @@ new Pets('Rocket', 'sleepy', '7 years', '12 lbs 8 oz', false, true, false, true,
 
 new Pets('Samwise', 'snowy', '3 years', '60 lbs 8 oz', true, false, false, true, true, true, true, 'Samwise is the perfect dog--fun, loyal, and good-natured. He will never poop on the rug. And he will always play with the children. And the cats. He looooooves cats. And frisbees!');
 
-new Pets('Biff and Buff', 'twins', '2 years', '5 lbs 2 oz and 6 lbs', true, true, true, true, true, true, false, 'Biff and Buff are inseparable siblings. So we insist they be adopted together! They are their own best friends, so worry not about having to give them too much attention. They’re young and curious, so they can be a bit troublesome, but they mean well.');
+new Pets('Biff & Buff', 'twins', '2 years', '5 lbs 2 oz and 6 lbs', true, true, true, true, true, true, false, 'Biff and Buff are inseparable siblings. So we insist they be adopted together! They are their own best friends, so worry not about having to give them too much attention. They’re young and curious, so they can be a bit troublesome, but they mean well.');
 
 new Pets('Clyde', 'hedgy', '11 months', '4lbs 9 oz', false, true, false, true, true, true, true, 'Clyde might be a little messy by nature, but he is a ball of joy to have around. What\'s the point in having a hedgehog around? This little guy will show you that he can love as much as the rest of them. Whether struttin\' his stuff or bummin\' in the palms of your hand, he is a great companion to have around!');
 

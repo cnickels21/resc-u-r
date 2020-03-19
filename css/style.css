@@ -320,6 +320,6 @@ article img {
 /*------------------
     Special Case
 -------------------*/
-/* .hide {
+.hide {
   display: none;
-}  */
+} 

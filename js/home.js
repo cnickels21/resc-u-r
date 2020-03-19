@@ -1,4 +1,16 @@
 'use strict';
+
+// function welcomeMessage(event) {
+//   event.preventDefault();
+
+
+
+
+// }
+
+// var pageLoad = document.getElementById('welcome');
+// pageLoad.addEventListener('load', welcomeMessage);
+
  
 // https://medium.com/@zackcreach/shred-the-gnar-how-to-write-decode-regex-for-email-validation-9a970fa91641 used this to read more about regex. 
 // Grab the email input field and also the update div below it
@@ -27,8 +39,11 @@ function inputEmail(e) {
 
 function handleFormSubmission(event) {
   event.preventDefault();
- 
- 
+
+  var adopter = document.getElementById('name').value;
+  localStorage.setItem('yourName', JSON.stringify(adopter));
+  console.log(adopter);
+
   var userData = [];
   var petValue0 = document.getElementById('petInput0').checked;  //get the value of an element by it's id
   userData.push(petValue0);
@@ -36,21 +51,23 @@ function handleFormSubmission(event) {
   userData.push(petValue1);
   var petValue2 = document.getElementById('petInput4').checked;  //get the value of an element by it's id
   userData.push(petValue2);
- 
- 
- 
+
+  var hideForm = document.getElementById('form-div');
+  hideForm.classList.add('hide');
+
   // localStorage.setItem('userData', JSON.stringify(userData));
- 
+
   for (var i = 0; i < allPets.length; i++) {
     if (userData[0] === allPets[i].energy) {
       if (userData[1] === allPets[i].social) {
         if (userData[2] === allPets[i].clean) {
           renderMatch(allPets[i]);
+          localStorage.setItem('yourMatches', JSON.stringify(allPets[i]));
         }
       }
     }
   }
- 
+
   // render user pet matches in place of form
   function renderMatch() {
     // individual pet profiles
@@ -114,30 +131,33 @@ function handleFormSubmission(event) {
     personaParagraph.textContent = allPets[i].personality;
     article.appendChild(personaParagraph);
   }
+
+
+
   document.getElementById('petForm').reset();
 }
- 
+
 var formElement = document.getElementById('petForm');
 formElement.addEventListener('submit', handleFormSubmission);
- 
+
 //Slide show
 // https://stackoverflow.com/questions/50788951/loop-through-image-array-with-pure-javascript
 
 
 (function () {
- 
+
   const imgArray = [];
   for (var i = 0; i < allPets.length; i++) {
+    // img.classList.add(p[i]);
     imgArray.push('../images/' + allPets[i].imageName + '.jpg');
-    console.log(imgArray);
   }
- 
- 
+
+
   var index = 0;  // This will keep track of the current array index to use
   var img = document.getElementById('img'); // Get your reference just once, not on each function call
   console.log(imgArray);
- 
- 
+
+
   function autoChange() {
     // You only need to ensure that the index isn't out of bounds
     if (index < imgArray.length) {
@@ -152,6 +172,6 @@ formElement.addEventListener('submit', handleFormSubmission);
     setTimeout(autoChange, 3000);
   }
   autoChange();
- 
+
 })();
- 
+
