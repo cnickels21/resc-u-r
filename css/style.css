@@ -66,6 +66,19 @@ h3 {
   font-family: 'Permanent Marker', cursive;
   text-align: center;
   color: #f00;
+  text-align: center;
+}
+
+h4 {
+  font-family: 'Permanent Marker', cursive;
+  font-size: 2rem;
+  color: #f00;
+  margin: 15px;
+  text-shadow:
+  -1px -1px 0 #fff,
+  1px -1px 0 #fff,
+  -1px 1px 0 #fff,
+  1px 1px 0 #fff 
 }
 
 p {
@@ -158,6 +171,7 @@ header {
   background: linear-gradient(to top right, rgb(255, 255, 255), rgb(255, 255, 255), rgb(255, 255, 255), rgba(190, 190, 190, 0.7), rgb(175, 175, 175)), url(../images/paw-prints.jpg) fixed;
   height: 200px;
   border: solid 1px white;
+  margin-top: -17px;
 }
 
 footer {
@@ -167,7 +181,6 @@ footer {
   text-align: center;
   font-size: 1.5rem;
   width: 100%;
-  clear: both;
 }
 
 footer span {
@@ -199,25 +212,23 @@ footer span {
   width: 550px;
 }
 
-
-
-
 /*----------------------
-        email validation 
+    email validation 
 -----------------------*/
 
 /*---------------------
       Pet Cards
 ----------------------*/
 article {
-  float:right;
   width: 30%;
-  height: 1000px;
+  height: 900px;
   border: double 6px white;
   border-radius: 30px;
   background: linear-gradient(to bottom right, rgb(153, 153, 160), rgb(187, 187, 190), rgb(153, 153, 160));
   margin: 15px;
   padding: 15px;
+  display:inline-block;
+  vertical-align: top;
 }
 
 article ul {
@@ -225,6 +236,7 @@ article ul {
   width: 100%;
   text-align: left; 
   margin: 30px 0;
+  padding: 15px;
 }
 
 article ul li {
@@ -232,6 +244,7 @@ article ul li {
 }
 
 article p {
+  margin-top: 30px;
   font-size: 1.25rem;
   line-height: 2rem;
   width: 100%;
@@ -239,6 +252,40 @@ article p {
 }
 
 article img {
+  border-radius: 30px;
+}
+
+.card-container {
+  height: 300px;
+  perspective: 600;
+  position: relative;
+  width: 300px;
+}
+
+.card {
+  height: 300px;
+  position: absolute;
+  transform-style: preserve-3d;
+  transition: all 1s ease-in-out;
+  width: 300px;
+}
+
+.card:hover {
+  transform: rotateY(180deg);
+}
+
+.card .side {
+  backface-visibility: hidden;
+  height: 300px;
+  position: absolute;
+  width: 300px;
+}
+
+.card .back {
+  transform: rotateY(180deg);
+  color: white;
+  background-color: rgb(39, 39, 39);
+  border: double 3px white;
   border-radius: 30px;
 }
 
@@ -252,7 +299,7 @@ article img {
   padding: 30px;
   border: double 6px white;
   border-radius: 30px;
-  clear: both;
+  /* clear: both; */
   margin: 0 auto;
 }
 
@@ -322,4 +369,4 @@ article img {
 -------------------*/
 .hide {
   display: none;
-} 
+}  */
