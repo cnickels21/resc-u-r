@@ -66,3 +66,15 @@ for (var i = 0; i < allPets.length; i++) {
     allPets[i].render();
 }
 
+function welcomeMessage(event) {
+    event.preventDefault();
+    var returnMessage = localStorage.getItem('yourName');
+    if (returnMessage) {
+        pageLoad.textContent = `Hey ${returnMessage}! Check out some other options.`;
+    } else {
+        pageLoad.textContent = `Peruse your options here!`;
+    }
+}
+
+var pageLoad = document.getElementById('profile-message');
+window.addEventListener('load', welcomeMessage);

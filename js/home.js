@@ -1,17 +1,10 @@
 'use strict';
 
-// function welcomeMessage(event) {
-//   event.preventDefault();
 
 
 
 
-// }
 
-// var pageLoad = document.getElementById('welcome');
-// pageLoad.addEventListener('load', welcomeMessage);
-
- 
 // https://medium.com/@zackcreach/shred-the-gnar-how-to-write-decode-regex-for-email-validation-9a970fa91641 used this to read more about regex. 
 // Grab the email input field and also the update div below it
 // Why: to listen for changes in the input field, and show live updates in the update label!
@@ -21,19 +14,19 @@ const update = document.querySelector('.update');
 // Why: to validate the string as we type (on each keystroke)
 email.addEventListener('input', inputEmail);
 function inputEmail(e) {
-    const input = e.target.value;
-    // Check if the input is NOT blank first, and if it's not, make sure it matches our regex test
-    // Why: because we don't want to start validating before the user has started typing; after that it's fair game
-    if (input && /(^\w.*@\w+\.\w)/.test(input)) {
-      update.textContent = 'Valid Email!';
-      update.classList.add('success');
-      update.classList.remove('failure');
-    } else {
-      update.textContent = 'Keep Going...';
-      update.classList.remove('success');
-      update.classList.add('failure');
-    }
-  };
+  const input = e.target.value;
+  // Check if the input is NOT blank first, and if it's not, make sure it matches our regex test
+  // Why: because we don't want to start validating before the user has started typing; after that it's fair game
+  if (input && /(^\w.*@\w+\.\w)/.test(input)) {
+    update.textContent = 'Valid Email!';
+    update.classList.add('success');
+    update.classList.remove('failure');
+  } else {
+    update.textContent = 'Keep Going...';
+    update.classList.remove('success');
+    update.classList.add('failure');
+  }
+};
 
 
 
@@ -41,8 +34,7 @@ function handleFormSubmission(event) {
   event.preventDefault();
 
   var adopter = document.getElementById('name').value;
-  localStorage.setItem('yourName', JSON.stringify(adopter));
-  console.log(adopter);
+  localStorage.setItem('yourName', adopter);
 
   var userData = [];
   var petValue0 = document.getElementById('petInput0').checked;  //get the value of an element by it's id
@@ -139,6 +131,19 @@ function handleFormSubmission(event) {
 
 var formElement = document.getElementById('petForm');
 formElement.addEventListener('submit', handleFormSubmission);
+
+function welcomeMessage(event) {
+  event.preventDefault();
+  var returnMessage = localStorage.getItem('yourName');
+  if (returnMessage) {
+    pageLoad.textContent = `Welcome back ${returnMessage}.`;
+  } else {
+    pageLoad.textContent = `Welcome to Resc-U-r. Find your ideal pet!`;
+  }
+}
+
+var pageLoad = document.getElementById('welcome');
+window.addEventListener('load', welcomeMessage);
 
 //Slide show
 // https://stackoverflow.com/questions/50788951/loop-through-image-array-with-pure-javascript
