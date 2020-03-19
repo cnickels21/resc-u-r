@@ -14,13 +14,15 @@ function handleFormSubmission(event) {
  
  var hideForm = document.getElementById('form-div');
  hideForm.classList.add('hide');
-
+ 
+  // localStorage.setItem('userData', JSON.stringify(userData));
  
   for (var i = 0; i < allPets.length; i++) {
     if (userData[0] === allPets[i].energy) {
       if (userData[1] === allPets[i].social) {
         if (userData[2] === allPets[i].clean) {
           renderMatch(allPets[i]);
+          localStorage.setItem('yourMatches', JSON.stringify(allPets[i]));
         }
       }
     }
