@@ -72,8 +72,13 @@ h3 {
 h4 {
   font-family: 'Permanent Marker', cursive;
   font-size: 2rem;
-  color: white;
+  color: #f00;
   margin: 15px;
+  text-shadow:
+  -1px -1px 0 #fff,
+  1px -1px 0 #fff,
+  -1px 1px 0 #fff,
+  1px 1px 0 #fff 
 }
 
 p {
@@ -166,6 +171,7 @@ header {
   background: linear-gradient(to top right, rgb(255, 255, 255), rgb(255, 255, 255), rgb(255, 255, 255), rgba(190, 190, 190, 0.7), rgb(175, 175, 175)), url(../images/paw-prints.jpg) fixed;
   height: 200px;
   border: solid 1px white;
+  margin-top: -17px;
 }
 
 footer {
