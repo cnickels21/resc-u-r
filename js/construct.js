@@ -55,7 +55,7 @@ new Pets('Matt Barnhart', 'matthew', '33 years', '180 lbs', false, true, true, t
 
 new Pets('Marie Antons', 'marie', '28', '190 lbs', true, false, true, true, true, true, true, 'Marie Antons is an emerging software developer and student at DeltaV. I recently moved back to Iowa from the small Atlantic Island of Bermuda. I previously was in the hospitality industry as a chef and chose to shift careers to gain more stability while still being able to utilize my creativity and passion for constant learning.');
 
-new Pets('Chase Nickels', 'chase', '28 1/2 years', '160 lbx', false, true, false, true, true, true, true, 'Chase is a laid back individual with an unappeasable wanderlust.  He loves mountains and large bodies of water, as well as music in the park and dancing in the rain.  He grew up in a small town in northern Wisconsin. Software development, he believes, is a stepping stone towards growing within an ever changing industry and world.');
+new Pets('Chase Nickels', 'chase', '28 1/2 years', '160 lbs', false, true, false, true, true, true, true, 'Chase is a laid back individual with an unappeasable wanderlust.  He loves mountains and large bodies of water, as well as music in the park and dancing in the rain.  He grew up in a small town in northern Wisconsin. Software development, he believes, is a stepping stone towards growing within an ever changing industry and world.');
 
 //store the pet objects
 localStorage.setItem('savedPets', JSON.stringify(allPets));
