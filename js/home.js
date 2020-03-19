@@ -12,9 +12,9 @@ function handleFormSubmission(event) {
   var petValue2 = document.getElementById('petInput4').checked;  //get the value of an element by it's id
   userData.push(petValue2);
  
- 
- 
-  // localStorage.setItem('userData', JSON.stringify(userData));
+ var hideForm = document.getElementById('form-div');
+ hideForm.classList.add('hide');
+
  
   for (var i = 0; i < allPets.length; i++) {
     if (userData[0] === allPets[i].energy) {
