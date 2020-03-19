@@ -1,15 +1,8 @@
 'use strict';
 
-// function welcomeMessage(event) {
-//   event.preventDefault();
 
 
 
-
-// }
-
-// var pageLoad = document.getElementById('welcome');
-// pageLoad.addEventListener('load', welcomeMessage);
 
  
 // https://medium.com/@zackcreach/shred-the-gnar-how-to-write-decode-regex-for-email-validation-9a970fa91641 used this to read more about regex. 
@@ -40,9 +33,8 @@ function inputEmail(e) {
 function handleFormSubmission(event) {
   event.preventDefault();
 
-  var adopter = document.getElementById('name').value;
-  localStorage.setItem('yourName', JSON.stringify(adopter));
-  console.log(adopter);
+  // var adopter = document.getElementById('name').value;
+  // localStorage.setItem('yourName', JSON.stringify(adopter));
 
   var userData = [];
   var petValue0 = document.getElementById('petInput0').checked;  //get the value of an element by it's id
@@ -139,6 +131,22 @@ function handleFormSubmission(event) {
 
 var formElement = document.getElementById('petForm');
 formElement.addEventListener('submit', handleFormSubmission);
+
+// function welcomeMessage(event) {
+//   event.preventDefault();
+
+  
+//   if (localStorage.getItem('yourName')) {
+//     pageLoad.textContent = `Welcome back ${adopter}.`;
+//   } else {
+//     pageLoad.textContent = `Welcome to Resc-U-r. Find your ideal pet!`;
+//   }
+
+
+// }
+
+// var pageLoad = document.getElementById('welcome');
+// pageLoad.addEventListener('load', welcomeMessage);
 
 //Slide show
 // https://stackoverflow.com/questions/50788951/loop-through-image-array-with-pure-javascript
