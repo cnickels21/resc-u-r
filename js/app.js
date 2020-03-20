@@ -85,6 +85,8 @@ for (var i = 0; i < allPets.length; i++) {
   allPets[i].render();
 }
 
+// On load message
+
 function welcomeMessage(event) {
   event.preventDefault();
   var returnMessage = localStorage.getItem('yourName');
