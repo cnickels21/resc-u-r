@@ -262,8 +262,6 @@ window.addEventListener('load', welcomeMessage);
     if (index < imgArray.length) {
       img.src = imgArray[index];      // If not, use the index
       index++;                        // Then, increment it
-      console.clear();
-      console.log(imgArray[index]);
     } else {
       index = 0;  // If so, reset the index
     }
