@@ -60,33 +60,33 @@ function renderTeam() {
 
     var doggos = document.createElement('li');
     if (allPets[i].isGoodWithDogs === true) {
-      doggos.textContent = `Enjoys being around dogs`;
+      doggos.textContent = 'Enjoys being around dogs';
     } else if (allPets[i].isGoodWithDogs === false) {
-      doggos.textContent = `Does not like dogs`;
+      doggos.textContent = 'Does not like dogs';
     }
     stats.appendChild(doggos);
     // good with cats or not
     var kitties = document.createElement('li');
     if (allPets[i].isGoodWithCats === true) {
-      kitties.textContent = `Enjoys being around cats`;
+      kitties.textContent = 'Enjoys being around cats';
     } else if (allPets[i].isGoodWithCats === false) {
-      kitties.textContent = `Does not like cats`;
+      kitties.textContent = 'Does not like cats';
     }
     stats.appendChild(kitties);
     // good with kids or not
     var kids = document.createElement('li');
     if (allPets[i].isGoodWithKids === true) {
-      kids.textContent = `Enjoys being around kids`;
+      kids.textContent = 'Enjoys being around kids';
     } else if (allPets[i].isGoodWithKids === false) {
-      kids.textContent = `Does not like kids`;
+      kids.textContent = 'Does not like kids';
     }
     stats.appendChild(kids);
     // good with mailmen or not
     var postal = document.createElement('li');
     if (allPets[i].isGoodWithMail === true) {
-      postal.textContent = `Won't attack postal carriers`;
+      postal.textContent = 'Won\'t attack postal carriers';
     } else if (allPets[i].isGoodWithMail === false) {
-      postal.textContent = `Postal carriers beware!`;
+      postal.textContent = 'Postal carriers beware!';
     }
     stats.appendChild(postal);
     // personality paragraph

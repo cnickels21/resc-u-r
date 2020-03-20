@@ -26,13 +26,14 @@ html {
 
 body > header, main, footer {
   margin: 0px auto;
-  width: 1200px;
+  /* width: 1200px; */
   text-align: center;
 }
 
 main {
-  padding: 30px;
+  padding: 15px;
   font-family: 'Roboto', sans-serif;
+  margin-left: 75px;
 }
 
 h1 {
@@ -73,7 +74,7 @@ h4 {
   font-family: 'Permanent Marker', cursive;
   font-size: 2rem;
   color: #f00;
-  margin: 15px;
+  margin-bottom: 30px;
   text-shadow:
   -1px -1px 0 #fff,
   1px -1px 0 #fff,
@@ -161,7 +162,8 @@ header {
   background: linear-gradient(to top right, rgb(255, 255, 255), rgb(255, 255, 255), rgb(255, 255, 255), rgba(190, 190, 190, 0.7), rgb(175, 175, 175)), url(../images/paw-prints.jpg) fixed;
   height: 200px;
   border: solid 1px white;
-  margin-top: -17px;
+  position: relative;
+  top: -17px;
 }
 
 footer {
@@ -192,6 +194,11 @@ footer span {
   border-radius: 30px;
 }
 
+#form-div p {
+  width: 540px;
+  margin-top: 30px;
+}
+
 #petForm {
   font-size: 1.5rem; 
   line-height: 2.5rem;
@@ -199,7 +206,7 @@ footer span {
 }
 
 #petForm p {
-  width: 550px;
+  width: 540px;
 }
 
 /*----------------------
@@ -210,12 +217,12 @@ footer span {
       Pet Cards
 ----------------------*/
 article {
-  width: 30%;
+  width: 350px;
   height: 900px;
   border: double 6px white;
   border-radius: 30px;
   background: linear-gradient(to bottom right, rgb(153, 153, 160), rgb(187, 187, 190), rgb(153, 153, 160));
-  margin: 15px 0 15px 30px;
+  margin: 15px;
   padding: 15px;
   display:inline-block;
   vertical-align: top;
@@ -341,7 +348,7 @@ article img {
   border: double 6px white;
   border-radius: 30px;
   display: inline-block;
-  margin: 15px;
+  margin: 30px;
 }
 #slideshow img {
   border-radius: 50px;
@@ -378,6 +385,7 @@ article img {
   border-radius: 6px;
   padding: 5px;
   display: block;
+  font-family: 'Roboto', sans-serif;
 }
 
 #soon:hover #coming-soon {

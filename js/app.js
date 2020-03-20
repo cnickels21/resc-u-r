@@ -48,33 +48,33 @@ for (var i = 0; i < allPets.length; i++) {
 
     var doggos = document.createElement('li');
     if (this.isGoodWithDogs === true) {
-      doggos.textContent = `Enjoys being around dogs`;
+      doggos.textContent = 'Enjoys being around dogs';
     } else if (this.isGoodWithDogs === false) {
-      doggos.textContent = `Does not like dogs`;
+      doggos.textContent = 'Does not like dogs';
     }
     stats.appendChild(doggos);
     // good with cats or not
     var kitties = document.createElement('li');
     if (this.isGoodWithCats === true) {
-      kitties.textContent = `Enjoys being around cats`;
+      kitties.textContent = 'Enjoys being around cats';
     } else if (this.isGoodWithCats === false) {
-      kitties.textContent = `Does not like cats`;
+      kitties.textContent = 'Does not like cats';
     }
     stats.appendChild(kitties);
     // good with kids or not
     var kids = document.createElement('li');
     if (this.isGoodWithKids === true) {
-      kids.textContent = `Enjoys being around kids`;
+      kids.textContent = 'Enjoys being around kids';
     } else if (this.isGoodWithKids === false) {
-      kids.textContent = `Does not like kids`;
+      kids.textContent = 'Does not like kids';
     }
     stats.appendChild(kids);
     // good with mailmen or not
     var postal = document.createElement('li');
     if (this.isGoodWithMail === true) {
-      postal.textContent = `Won't attack postal carriers`;
+      postal.textContent = 'Won\'t attack postal carriers';
     } else if (this.isGoodWithMail === false) {
-      postal.textContent = `Postal carriers beware!`;
+      postal.textContent = 'Postal carriers beware!';
     }
     stats.appendChild(postal);
     // personality paragraph
@@ -86,13 +86,13 @@ for (var i = 0; i < allPets.length; i++) {
 }
 
 function welcomeMessage(event) {
-    event.preventDefault();
-    var returnMessage = localStorage.getItem('yourName');
-    if (returnMessage) {
-        pageLoad.textContent = `Hey ${returnMessage}! Check out some other options.`;
-    } else {
-        pageLoad.textContent = `Peruse your options here!`;
-    }
+  event.preventDefault();
+  var returnMessage = localStorage.getItem('yourName');
+  if (returnMessage) {
+    pageLoad.textContent = `Hey, ${returnMessage}. Check out some other options!`;
+  } else {
+    pageLoad.textContent = 'Peruse your options here!';
+  }
 }
 
 var pageLoad = document.getElementById('profile-message');
