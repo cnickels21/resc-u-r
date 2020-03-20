@@ -1,0 +1,387 @@
+/*------------------
+fonts:
+font-family: 'Permanent Marker', cursive;
+font-family: 'Roboto', sans-serif;
+
+colors:
+red - #f00
+blue - rgb(59, 153, 156)
+light blue - rgb(166, 199, 241)
+white - #fff
+black - #000
+--------------------*/
+
+/*----------------------
+      Global Style
+----------------------*/
+*  {
+  box-sizing: border-box;
+}
+html { 
+  background: linear-gradient(to bottom right, rgba(59, 153, 156, 0.8), rgba(166, 199, 241, 0.6)), url(../images/paw-trail.jpg) top fixed;
+  color: #000;
+  font-family: 'Roboto', sans-serif;
+
+}
+
+body > header, main, footer {
+  margin: 0px auto;
+  text-align: center;
+}
+
+main {
+  padding: 15px;
+  font-family: 'Roboto', sans-serif;
+  margin-left: 75px;
+}
+
+h1 {
+  font-size: 7rem;
+  font-family: 'Permanent Marker', cursive;
+  text-align: center;
+  color: #fff;
+  text-shadow:
+		-3px -3px 0 #f00,
+		3px -3px 0 #f00,
+		-3px 3px 0 #f00,
+		3px 3px 0 #f00 
+  
+}
+
+h2 {
+  font-size: 3rem;
+  font-family: 'Permanent Marker', cursive;
+  text-align: center;
+  color: #f00;
+  margin: 15px;
+  text-shadow:
+		-1px -1px 0 #fff,
+		1px -1px 0 #fff,
+		-1px 1px 0 #fff,
+		1px 1px 0 #fff 
+}
+
+h3 {
+  font-size: 2rem;
+  font-family: 'Permanent Marker', cursive;
+  text-align: center;
+  color: #f00;
+  text-align: center;
+}
+
+h4 {
+  font-family: 'Permanent Marker', cursive;
+  font-size: 2rem;
+  color: #f00;
+  margin-bottom: 30px;
+  text-shadow:
+  -1px -1px 0 #fff,
+  1px -1px 0 #fff,
+  -1px 1px 0 #fff,
+  1px 1px 0 #fff 
+}
+
+p {
+  font-size: 1.5rem;
+  line-height: 2rem;
+  width: 600px;
+  margin: 0 auto;
+}
+
+main li {
+  font-size: 1.25rem;
+}
+button {
+  padding: 15px 30px;
+  margin-top: 15px;
+  font-size: 1.25rem;
+  color: #fff;
+  background: rgb(100, 100, 100);
+  border-radius: 6px
+  transition-property: background, border-radius;
+  transition-duration: 0.3s;
+  transition-timing-function: linear;
+}
+
+button:hover {
+  background: #f00;
+  border-radius: 30px;
+}
+
+/*--------------------
+      Nav Bar
+----------------------*/
+.sidenav {
+  width: 202px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  color: #f00;
+  border: solid 1px white;
+  background: linear-gradient(to bottom, rgb(255, 255, 255), rgb(255, 255, 255), rgb(255, 255, 255), rgb(190, 190, 190), rgb(175, 175, 175)) right;
+  font-family: 'Permanent Marker', cursive;
+
+}
+
+.sidenav ul {
+  font-size: 1.5rem;
+  margin-top: 15px;
+  text-align: center;
+}
+
+.sidenav ul li {
+  margin: 30px 0;
+}
+
+.sidenav ul a {
+  text-decoration: none;
+  color: #f00;
+}
+
+.socialIcons a {
+  display: block;
+  color: #f00;
+  font-size: 2rem;
+  padding: 15px 30px;
+  text-align: center;
+}
+
+.grow:hover
+{
+  -webkit-transform: scale(1.4);
+  -ms-transform: scale(1.4);
+  transform: scale(1.4);
+}
+
+/*----------------------
+    Header & Footer
+-----------------------*/
+header {
+  background: linear-gradient(to top right, rgb(255, 255, 255), rgb(255, 255, 255), rgb(255, 255, 255), rgba(190, 190, 190, 0.7), rgb(175, 175, 175)), url(../images/paw-prints.jpg) fixed;
+  height: 200px;
+  border: solid 1px white;
+  position: relative;
+  top: -17px;
+}
+
+footer {
+  background-color: #fff;
+  padding: 15px;
+  margin: 30px;
+  text-align: center;
+  font-size: 1.5rem;
+  width: 100%;
+}
+
+footer span {
+  font-family: 'Permanent Marker', cursive;
+  color: #f00;
+  font-size: 1.5rem;
+}
+
+/*---------------------
+        Form
+----------------------*/
+#form-div {
+  background: linear-gradient(to bottom right, rgb(153, 153, 160), rgb(187, 187, 190), rgb(153, 153, 160));
+  width: 600px;
+  padding: 30px;
+  margin: 30px auto;
+  border: double 6px white;
+  border-radius: 30px;
+}
+
+#form-div p {
+  width: 540px;
+  margin-top: 30px;
+}
+
+#petForm {
+  font-size: 1.5rem; 
+  line-height: 2.5rem;
+  color: #000;
+}
+
+#petForm p {
+  width: 540px;
+}
+
+/*---------------------
+      Pet Cards
+----------------------*/
+article {
+  width: 350px;
+  height: 900px;
+  border: double 6px white;
+  border-radius: 30px;
+  background: linear-gradient(to bottom right, rgb(153, 153, 160), rgb(187, 187, 190), rgb(153, 153, 160));
+  margin: 15px;
+  padding: 15px;
+  display:inline-block;
+  vertical-align: top;
+}
+
+article ul {
+  font-size: 1.25rem;
+  width: 100%;
+  text-align: left; 
+  margin: 30px 0;
+  padding: 15px;
+}
+
+article ul li {
+  margin: 15px 0;
+}
+
+article p {
+  margin-top: 30px;
+  font-size: 1.25rem;
+  line-height: 2rem;
+  width: 100%;
+  text-align: left;
+}
+
+article img {
+  border-radius: 30px;
+}
+
+.card-container {
+  height: 300px;
+  perspective: 600;
+  position: relative;
+  width: 300px;
+}
+
+.card {
+  height: 300px;
+  position: absolute;
+  transform-style: preserve-3d;
+  transition: all 1s ease-in-out;
+  width: 300px;
+}
+
+.card:hover {
+  transform: rotateY(180deg);
+}
+
+.card .side {
+  backface-visibility: hidden;
+  height: 300px;
+  position: absolute;
+  width: 300px;
+}
+
+.card .back {
+  transform: rotateY(180deg);
+  color: white;
+  background-color: rgb(39, 39, 39);
+  border: double 3px white;
+  border-radius: 30px;
+}
+
+/*----------------------
+        Chart
+-----------------------*/
+#pet-chart-div {
+  background: linear-gradient(to bottom right, rgb(153, 153, 160), rgb(187, 187, 190), rgb(153, 153, 160));
+  width: 600px;
+  height: 600px;
+  padding: 30px;
+  border: double 6px white;
+  border-radius: 30px;
+  /* clear: both; */
+  margin: 0 auto;
+}
+
+/*----------------------
+    Shelter Page
+----------------------*/
+#shelter-main section {
+  background: linear-gradient(to bottom right, rgb(153, 153, 160), rgb(187, 187, 190), rgb(153, 153, 160));
+  width: 600px;
+  padding: 30px;
+  border: double 6px white;
+  border-radius: 30px;
+  margin: 30px auto;
+}
+
+#shelter-main h3 {
+  padding-bottom: 30px;
+  text-shadow:
+		-1px -1px 0 #fff,
+		1px -1px 0 #fff,
+		-1px 1px 0 #fff,
+		1px 1px 0 #fff 
+}
+
+#shelter-main section p {
+  width: 550px;
+}
+
+#shelter-main a {
+  text-decoration: none;
+  background-color: #f00;
+  color: #fff;
+  font-size: 1.25rem;
+  border-radius: 30px;
+  padding: 15px;
+  line-height: 4rem;
+}
+
+#shelter-main img {
+  border: double 6px white;
+}
+
+/*------------------
+      Slideshow
+-------------------*/
+#slideshow {
+  background: linear-gradient(to bottom right, rgb(153, 153, 160), rgb(187, 187, 190), rgb(153, 153, 160));
+  padding: 15px;
+  border: double 6px white;
+  border-radius: 30px;
+  display: inline-block;
+  margin: 30px;
+}
+#slideshow img {
+  border-radius: 50px;
+}
+
+.mission {
+  display: inline-block;
+  vertical-align: top;
+  text-align: left;
+  margin: 15px;
+}
+
+/*------------------
+    Special Case
+-------------------*/
+.hide {
+  display: none;
+}  
+
+/*----------------------------------------------------------------
+                      Coming Soon Hover
+          referenced code from below for this effect
+  https://www.w3schools.com/css/tryit.asp?filename=trycss_tooltip
+----------------------------------------------------------------*/
+
+.soon .coming-soon {
+  visibility: hidden;
+  font-size: small;
+  width: 100px;
+  background-color: white;
+  color: #f00;
+  border: solid 1px #f00;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px;
+  display: block;
+  font-family: 'Roboto', sans-serif;
+}
+
+.soon:hover .coming-soon {
+  visibility: visible;
+}
