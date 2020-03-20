@@ -359,4 +359,27 @@ article img {
 -------------------*/
 .hide {
   display: none;
-}  */
+}  
+
+/*----------------------------------------------------------------
+                      Coming Soon Hover
+          referenced code from below for this effect
+  https://www.w3schools.com/css/tryit.asp?filename=trycss_tooltip
+----------------------------------------------------------------*/
+
+#soon #coming-soon {
+  visibility: hidden;
+  font-size: small;
+  width: 100px;
+  background-color: white;
+  color: #f00;
+  border: solid 1px #f00;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px;
+  display: block;
+}
+
+#soon:hover #coming-soon {
+  visibility: visible;
+}

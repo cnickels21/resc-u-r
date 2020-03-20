@@ -1,10 +1,5 @@
 'use strict';
 
-
-
-
-
-
 // https://medium.com/@zackcreach/shred-the-gnar-how-to-write-decode-regex-for-email-validation-9a970fa91641 used this to read more about regex. 
 // Grab the email input field and also the update div below it
 // Why: to listen for changes in the input field, and show live updates in the update label!
@@ -12,7 +7,7 @@ const email = document.querySelector('.email');
 const update = document.querySelector('.update');
 // Listen to any change to the input we selected above
 // Why: to validate the string as we type (on each keystroke)
-email.addEventListener('input', inputEmail);
+
 function inputEmail(e) {
   const input = e.target.value;
   // Check if the input is NOT blank first, and if it's not, make sure it matches our regex test
@@ -27,6 +22,8 @@ function inputEmail(e) {
     update.classList.add('failure');
   }
 }
+
+email.addEventListener('input', inputEmail);
 
 var rouletteButton = document.getElementById('roulette-button');
 rouletteButton.addEventListener('click', petRoulette);

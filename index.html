@@ -26,14 +26,18 @@
         <li class="grow"><a href="shelters.html">Shelter Locations</a></li>
       </ul>
 
+      <!-- Social Icons-->
+
       <div class="socialIcons">
-        <a class="grow" href="https://github.com/cnickels21/resc-u-r" target="_blank"><i
+        <a target="_blank" class="grow" href="https://github.com/cnickels21/resc-u-r"><i
             class="fab fa-github-alt"></i></a>
-        <a class="grow" href=""><i class="fab fa-twitter"></i></a>
-        <a class="grow" href="https://www.facebook.com/Resc-U-r-112608220366398" target="_blank"><i
+        <a target="_blank" class="grow" href="https://www.facebook.com/Resc-U-r-112608220366398"><i
             class="fab fa-facebook-f"></i></a>
-        <a class="grow" href="https://www.instagram.com/resc_u_r/" target="_blank"><i class="fab fa-instagram"></i></a>
+        <a target="_blank" class="grow" href="https://www.instagram.com/resc_u_r/"><i class="fab fa-instagram"></i></a>
+        <a class="grow" id="soon" href=""><i class="fab fa-twitter"><span id="coming-soon">Coming Soon!</span></i></a>
       </div>
+
+      <!-- <button>Change Color</button> -->
     </nav>
   </header>
 
@@ -43,15 +47,14 @@
     </h4>
     <div class="mission">
       <h2>Our Mission</h2>
-      <p>
-        Here at Resc-U-r we pride ourselves on matching people with their ideal companions. We match our
+      <p>Here at Resc-U-r we pride ourselves on matching people with their ideal companions. We match our
         pets to you by their distinct personality traits and the amount of energy they have. Simply fill
         out our short questionnaire to see which pets would be perfect for you to add to your family
-        Today!
-      </p>
+        Today! </p>
     </div>
 
     <!--    Div for the slidehow   -->
+
     <section id="slideshow">
       <figure>
         <img id='img' class='displayed-img' width="300" src="images/doofus.jpg">
@@ -59,18 +62,21 @@
     </section>
 
     <!--    End of div for the slidehow   -->
+
     <div id="form-div">
       <form action="" id="petForm">
 
         <div class="contactInfo">
           <label for="name">Your name: </label>
           <input type="text" name="name" id="name" required>
+
         </div>
 
         <div class="email">
           <label for="email">Your Email: </label>
-          <input type="text" name="email" id="email" required>
+          <input type="email" name="email" class="email" required>
         </div>
+        >>>>>>> master
 
         <p class="formP">How would you describe your lifestyle? </p>
 
@@ -82,16 +88,23 @@
         </fieldset>
 
         <fieldset>
-          <input id="petInput2" type="radio" value="friendly" name="group3">
+          <input id="petInput0" type="radio" value="energetic" name="group2" required>
+          <label for="energetic">Energetic</label>
+          <input id="petInput1" type="radio" value="calm" name="group2" required>
+          <label for="calm">Calm</label>
+        </fieldset>
+
+        <fieldset>
+          <input id="petInput2" type="radio" value="friendly" name="group3" required>
           <label for="friendly">Friendly</label>
-          <input id="petInput3" type="radio" value="shy" name="group3">
+          <input id="petInput3" type="radio" value="shy" name="group3" required>
           <label for="shy">Shy</label>
         </fieldset>
 
         <fieldset>
-          <input id="petInput4" type="radio" value="neat" name="group6">
+          <input id="petInput4" type="radio" value="neat" name="group6" required>
           <label for="neat">Neat </label>
-          <input id="petInput5" type="radio" value="disorderly" name="group6">
+          <input id="petInput5" type="radio" value="disorderly" name="group6" required>
           <label for="disorderly">Disorderly</label>
         </fieldset>
 
@@ -99,7 +112,10 @@
         <button type="reset" value="reset">Clear Form</button>
 
       </form>
-      <button id="roulette-button">Pet Roulette!</button>
+
+      <p>Open to your options? Try our Pet Roulette feature!</p>
+
+      <button id="roulette-button">Try your luck!</button>
     </div>
 
     <section id="match-profiles">
@@ -110,4 +126,5 @@
     <script src="js/home.js"></script>
 
 </body>
+
 </html>
