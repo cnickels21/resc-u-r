@@ -22,13 +22,12 @@ function inputEmail(e) {
     update.classList.add('failure');
   }
 }
-
 email.addEventListener('input', inputEmail);
+
+// Pet roulette
 
 var rouletteButton = document.getElementById('roulette-button');
 rouletteButton.addEventListener('click', petRoulette);
-
-
 var randomInt = Math.floor(Math.random() * allPets.length);
 
 function petRoulette() {
@@ -118,6 +117,8 @@ function petRoulette() {
   document.getElementById('petForm').reset();
 }
 
+// Form submission function
+
 function handleFormSubmission(event) {
   event.preventDefault();
 
@@ -135,7 +136,6 @@ function handleFormSubmission(event) {
   var hideForm = document.getElementById('form-div');
   hideForm.classList.add('hide');
 
-  // localStorage.setItem('userData', JSON.stringify(userData));
   for (var i = 0; i < allPets.length; i++) {
     if (userData[0] === allPets[i].energy) {
       if (userData[1] === allPets[i].social) {
@@ -229,6 +229,8 @@ function handleFormSubmission(event) {
 var formElement = document.getElementById('petForm');
 formElement.addEventListener('submit', handleFormSubmission);
 
+// On load message
+
 function welcomeMessage(event) {
   event.preventDefault();
   var returnMessage = localStorage.getItem('yourName');
@@ -249,7 +251,6 @@ window.addEventListener('load', welcomeMessage);
 
   const imgArray = [];
   for (var i = 0; i < allPets.length; i++) {
-    // img.classList.add(p[i]);
     imgArray.push('../images/' + allPets[i].imageName + '.jpg');
   }
 

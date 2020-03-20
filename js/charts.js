@@ -1,3 +1,5 @@
+'use strict';
+
 var petLikes = [];
 var isGoodWith = ['Likes Dogs', 'Likes Cats', 'Likes Kids', 'Likes Postal Carriers'];
 var dogs = 0;
@@ -6,7 +8,7 @@ var kids = 0;
 var postalCarriers = 0;
 
 function getPetLikes() {
-  for (var i = 0; i < allPets.length ; i++) {
+  for (var i = 0; i < allPets.length; i++) {
     if (allPets[i].isGoodWithDogs === true) {
       dogs++;
     }

@@ -26,7 +26,6 @@ html {
 
 body > header, main, footer {
   margin: 0px auto;
-  /* width: 1200px; */
   text-align: center;
 }
 
@@ -179,7 +178,6 @@ footer span {
   font-family: 'Permanent Marker', cursive;
   color: #f00;
   font-size: 1.5rem;
-
 }
 
 /*---------------------
@@ -208,10 +206,6 @@ footer span {
 #petForm p {
   width: 540px;
 }
-
-/*----------------------
-    email validation 
------------------------*/
 
 /*---------------------
       Pet Cards
@@ -374,7 +368,7 @@ article img {
   https://www.w3schools.com/css/tryit.asp?filename=trycss_tooltip
 ----------------------------------------------------------------*/
 
-#soon #coming-soon {
+.soon .coming-soon {
   visibility: hidden;
   font-size: small;
   width: 100px;
@@ -388,6 +382,6 @@ article img {
   font-family: 'Roboto', sans-serif;
 }
 
-#soon:hover #coming-soon {
+.soon:hover .coming-soon {
   visibility: visible;
 }
