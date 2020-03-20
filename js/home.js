@@ -12,7 +12,7 @@ const email = document.querySelector('.email');
 const update = document.querySelector('.update');
 // Listen to any change to the input we selected above
 // Why: to validate the string as we type (on each keystroke)
-email.addEventListener('input', inputEmail);
+
 function inputEmail(e) {
   const input = e.target.value;
   // Check if the input is NOT blank first, and if it's not, make sure it matches our regex test
@@ -26,7 +26,9 @@ function inputEmail(e) {
     update.classList.remove('success');
     update.classList.add('failure');
   }
-};
+}
+
+email.addEventListener('input', inputEmail);
 
 
 
@@ -198,4 +200,3 @@ window.addEventListener('load', welcomeMessage);
   autoChange();
 
 })();
-
