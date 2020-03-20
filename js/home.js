@@ -251,7 +251,7 @@ window.addEventListener('load', welcomeMessage);
 
   const imgArray = [];
   for (var i = 0; i < allPets.length; i++) {
-    imgArray.push('https://github.com/cnickels21/resc-u-r/blob/master/images/' + allPets[i].imageName + '.jpg');
+    imgArray.push('images/' + allPets[i].imageName + '.jpg');
   }
 
   var index = 0;  // This will keep track of the current array index to use
