@@ -1,118 +1,129 @@
 <!DOCTYPE html>
 
 <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Resc-U-r</title>
-    <meta name="description" content="">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="css/reset.css">
-    <link rel="stylesheet" href="css/style.css">
-    <link href="https://fonts.googleapis.com/css?family=Permanent+Marker|Roboto&display=swap" rel="stylesheet">
-    rel="stylesheet">
-    <script src="https://kit.fontawesome.com/988c5e7e3e.js" crossorigin="anonymous"></script>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Resc-U-r</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link href="https://fonts.googleapis.com/css?family=Permanent+Marker|Roboto&display=swap" rel="stylesheet">
+  rel="stylesheet">
+  <script src="https://kit.fontawesome.com/988c5e7e3e.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
-  <div class="page-container">
-    <div class="content-wrapper">
-      <header>
-        <h1>Resc-U-r</h1>
-        <h3>A pet for every lifestyle!</h3>
-        <nav class="sidenav">
-          <img src="images/resc-u-r.png">
-          <ul>
-            <li class="grow"><a href="index.html">Home</a></li>
-            <li class="grow"><a href="profiles.html">Pet Profiles</a></li>
-            <li class="grow"><a href="team.html">About Us</a></li>
-            <li class="grow"><a href="shelters.html">Shelter Locations</a></li>
-          </ul>
+  <header>
+    <h1>Resc-U-r</h1>
+    <h3>A pet for every lifestyle!</h3>
+    <nav class="sidenav">
+      <img src="images/resc-u-r.png">
+      <ul>
+        <li class="grow"><a href="index.html">Home</a></li>
+        <li class="grow"><a href="profiles.html">Pet Profiles</a></li>
+        <li class="grow"><a href="team.html">About Us</a></li>
+        <li class="grow"><a href="shelters.html">Shelter Locations</a></li>
+      </ul>
 
-          <!-- Social Icons-->
+      <!-- Social Icons-->
 
-          <div class="socialIcons">
-            <a target="_blank" class="grow" href="https://github.com/cnickels21/resc-u-r"><i class="fab fa-github-alt"></i></a>
-            <a target="_blank" class="grow" href="https://www.facebook.com/Resc-U-r-112608220366398"><i class="fab fa-facebook-f"></i></a>
-            <a target="_blank" class="grow" href="https://www.instagram.com/resc_u_r/"><i class="fab fa-instagram"></i></a>
-            <a class="grow" id="soon" href=""><i class="fab fa-twitter"><span id="coming-soon">Coming Soon!</span></i></a>
-          </div>
+      <div class="socialIcons">
+        <a target="_blank" class="grow" href="https://github.com/cnickels21/resc-u-r"><i
+            class="fab fa-github-alt"></i></a>
+        <a target="_blank" class="grow" href="https://www.facebook.com/Resc-U-r-112608220366398"><i
+            class="fab fa-facebook-f"></i></a>
+        <a target="_blank" class="grow" href="https://www.instagram.com/resc_u_r/"><i class="fab fa-instagram"></i></a>
+        <a class="grow" id="soon" href=""><i class="fab fa-twitter"><span id="coming-soon">Coming Soon!</span></i></a>
+      </div>
 
-          <!-- <button>Change Color</button> -->
-        </nav>
-      </header>
+      <!-- <button>Change Color</button> -->
+    </nav>
+  </header>
 
-      <main>
-        <h4 id="welcome">
+  <main>
+    <h4 id="welcome">
 
-        </h4>
-        <div class="mission">
-          <h2>Our Mission</h2>
-          <p>Here at Resc-U-r we pride ourselves on matching people with their ideal companions. We match our
-            pets to you by their distinct personality traits and the amount of energy they have. Simply fill
-            out our short questionnaire to see which pets would be perfect for you to add to your family
-            Today! </p>
-        </div>
+    </h4>
+    <div class="mission">
+      <h2>Our Mission</h2>
+      <p>Here at Resc-U-r we pride ourselves on matching people with their ideal companions. We match our
+        pets to you by their distinct personality traits and the amount of energy they have. Simply fill
+        out our short questionnaire to see which pets would be perfect for you to add to your family
+        Today! </p>
+    </div>
 
-        <!--    Div for the slidehow   -->
+    <!--    Div for the slidehow   -->
 
-        <section id="slideshow">
-          <figure>
-            <img id='img' class='displayed-img' width="300" src="images/doofus.jpg">
-          </figure>
-        </section>
+    <section id="slideshow">
+      <figure>
+        <img id='img' class='displayed-img' width="300" src="images/doofus.jpg">
+      </figure>
+    </section>
 
-        <!--    End of div for the slidehow   -->
+    <!--    End of div for the slidehow   -->
 
-        <div id="form-div">
-          <form action="" id="petForm">
+    <div id="form-div">
+      <form action="" id="petForm">
 
-            <div class="contactInfo">
-              <label for="name">Your name: </label>
-              <input type="text" name="name" id="name" required>
-
-            </div>
-
-            <div class="email">
-              <label for="email">Your Email: </label>
-              <input type="email" name="email" class="email" required>
-            </div>
-
-            <p class="formP">How would you describe your lifestyle? </p>
-
-
-            <fieldset>
-              <input id="petInput0" type="radio" value="energetic" name="group2" required>
-              <label for="energetic">Energetic</label>
-              <input id="petInput1" type="radio" value="calm" name="group2" required>
-              <label for="calm">Calm</label>
-            </fieldset>
-
-            <fieldset>
-              <input id="petInput2" type="radio" value="friendly" name="group3" required>
-              <label for="friendly">Friendly</label>
-              <input id="petInput3" type="radio" value="shy" name="group3" required>
-              <label for="shy">Shy</label>
-            </fieldset>
-
-            <fieldset>
-              <input id="petInput4" type="radio" value="neat" name="group6" required>
-              <label for="neat">Neat </label>
-              <input id="petInput5" type="radio" value="disorderly" name="group6" required>
-              <label for="disorderly">Disorderly</label>
-            </fieldset>
-
-            <button type="submit" value="submit">Meet your Match!</button>
-
-          </form>
+        <div class="contactInfo">
+          <label for="name">Your name: </label>
+          <input type="text" name="name" id="name" required>
 
         </div>
 
-        <section id="match-profiles">
-          
-        </section>
+        <div class="email">
+          <label for="email">Your Email: </label>
+          <input type="email" name="email" class="email" required>
+        </div>
+        >>>>>>> master
 
-        <script src="js/construct.js"></script>
-        <script src="js/home.js"></script>
+        <p class="formP">How would you describe your lifestyle? </p>
+
+        <fieldset>
+          <input id="petInput0" type="radio" value="energetic" name="group2">
+          <label for="energetic">Energetic</label>
+          <input id="petInput1" type="radio" value="calm" name="group2">
+          <label for="calm">Calm</label>
+        </fieldset>
+
+        <fieldset>
+          <input id="petInput0" type="radio" value="energetic" name="group2" required>
+          <label for="energetic">Energetic</label>
+          <input id="petInput1" type="radio" value="calm" name="group2" required>
+          <label for="calm">Calm</label>
+        </fieldset>
+
+        <fieldset>
+          <input id="petInput2" type="radio" value="friendly" name="group3" required>
+          <label for="friendly">Friendly</label>
+          <input id="petInput3" type="radio" value="shy" name="group3" required>
+          <label for="shy">Shy</label>
+        </fieldset>
+
+        <fieldset>
+          <input id="petInput4" type="radio" value="neat" name="group6" required>
+          <label for="neat">Neat </label>
+          <input id="petInput5" type="radio" value="disorderly" name="group6" required>
+          <label for="disorderly">Disorderly</label>
+        </fieldset>
+
+        <button type="submit" value="submit">Meet your Match!</button>
+        <button type="reset" value="reset">Clear Form</button>
+
+      </form>
+
+      <p>Open to your options? Try our Pet Roulette feature!</p>
+
+      <button id="roulette-button">Try your luck!</button>
+    </div>
+
+    <section id="match-profiles">
+
+    </section>
+
+    <script src="js/construct.js"></script>
+    <script src="js/home.js"></script>
 
 </body>
 

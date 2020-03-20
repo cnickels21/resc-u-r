@@ -99,24 +99,14 @@ button {
   background: rgb(100, 100, 100);
   border-radius: 6px
   transition-property: background, border-radius;
-  transition-duration: 1s;
+  transition-duration: 0.3s;
   transition-timing-function: linear;
-   /* font-family: 'Permanent Marker', cursive; */
 }
+
 button:hover {
   background: #f00;
   border-radius: 30px;
 }
-
-/* button {
-  padding: 15px 30px;
-  margin-top: 15px;
-  font-size: 1.25rem;
- 
-  color: #fff;
-  background-color: #f00;
-  border-radius: 30px;
-} */
 
 /*--------------------
       Nav Bar
@@ -152,7 +142,7 @@ button:hover {
 .socialIcons a {
   display: block;
   color: #f00;
-  font-size: 1.75rem;
+  font-size: 2rem;
   padding: 15px 30px;
   text-align: center;
 }
