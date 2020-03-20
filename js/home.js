@@ -200,4 +200,3 @@ window.addEventListener('load', welcomeMessage);
   autoChange();
 
 })();
-
